@@ -1,4 +1,5 @@
 *~
+.venv
 venv-test
 build.stamp
 proof
