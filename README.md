@@ -17,14 +17,7 @@ it's still quite readable!
 
 Bytesized is created dynamically from a spritesheet found in `sources/spritesheet.png`.
 
-In order to turn this into a TTF, you'll need:
-- to set up a Python virtual environment in `./.venv`,
-- `Pillow`, for image reading
-- `numpy`, for image manipulation
-- `opencv-python-headless` (`opencv-python` works too), for fancier image manipulation
-- `fonttools`, for creating a TTF
-
-All of these packages can be found in `requirements.txt`, so a quick `pip install -r requirements.txt` after setting up the venv should suffice.
+To set up for building and testing, run `make setup`.
 
 In order to build the font, run `make build` at the root of the project. 
 This will create the TTF, and put it in `fonts/Bytesized-Regular.ttf`.
