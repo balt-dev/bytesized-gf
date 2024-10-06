@@ -41,8 +41,9 @@ Contributions are welcome! Feel free to open a PR with any changes you may want 
 
 # Trivia
 
-If you trim the font down to only 96 ASCII characters, you can store each glyph in only 12 bits, 
+If you trim the font down to only 96 ASCII characters (0x20 through 0x7F), you can store each glyph in only 3x4 = 12 bits, 
 meaning you can store the entire font in only 144 bytes! You can see exactly that in `./spritesheet-raw.bin`.
+In said file, each glyph is stored one after another in row-major order.
 
 # Acknowledgements
 
