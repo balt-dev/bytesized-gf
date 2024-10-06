@@ -43,7 +43,7 @@ jobs:
     - name: make proof
       run: |
         . .venv/bin/activate
-        python -m diffenator2 proof -o out/proof -pt 27 fonts/Bytesized-Regular.ttf
+        python -m diffenator2 proof -o out/proof -pt 24 fonts/Bytesized-Regular.ttf
     - name: Deploy site
       uses: peaceiris/actions-gh-pages@v4
       if: ${{ github.ref == 'refs/heads/main' }}
