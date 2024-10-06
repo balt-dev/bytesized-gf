@@ -11,6 +11,9 @@ instance_ufos
 build.ninja
 out/*
 !out/index.html
+!out/proof
+out/proof/*
+!out/proof/diffenator2-report.html
 
 # OS generated files #
 ######################
