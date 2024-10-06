@@ -33,6 +33,9 @@ Contributions are welcome! Feel free to open a PR with any changes you may want 
 ## v1.000
 - Initial release
 
+## v1.001
+- Properly handle dotless i/j
+
 # Trivia
 
 If you trim the font down to only 96 ASCII characters, you can store each glyph in only 12 bits, 

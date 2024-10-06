@@ -74,7 +74,7 @@ def main():
         "uniqueFontIdentifier": "cf2f3838-42c7-4f79-89db-502825af5c9f",
         "fullName": "Bytesized Regular",
         "psName": "Bytesized-Regular",
-        "version": "Version 1.000",
+        "version": "Version 1.001",
         "licenseDescription": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
         "licenseInfoURL": "https://openfontlicense.org"
     })
