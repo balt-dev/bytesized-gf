@@ -2,7 +2,7 @@
 
 ![Preview image of the Bytesized font, containing numbers, the alphabet, some punctuation, and "The quick brown fox jumps over the lazy dog."](documentation/preview.png)
 
-Bytesized is a miniscule pixel font - 3x4 modulo diacritics - 
+Bytesized is a miniscule monospace pixel font - 3x4 modulo diacritics - 
 made to be as legible as possible within these restrictions.
 
 The name comes from the fact that, if you restrict the font to ASCII only,
