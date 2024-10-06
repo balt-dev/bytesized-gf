@@ -51,3 +51,7 @@ The code for generating a vector image from a pixel graphic uses an algorithm cr
 which can be found [here](https://yal.cc/grid-based-contour-traversal/).
 
 <sub>thanks for reading &lt;3 -baltdev</sub>
+
+# License 
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is in this repo OFL.txt and is also available with a FAQ at: https://scripts.sil.org/OFL.
