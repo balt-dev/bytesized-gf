@@ -16,5 +16,6 @@ test:
 
 proof:
 	rm out/proof -rf
-	diffenator2 proof -o out/proof -pt 27 fonts/Bytesized-Regular.ttf
+	. .venv/bin/activate
+	.venv/bin/python3 -m diffenator2 proof -o out/proof -pt 27 fonts/Bytesized-Regular.ttf
 	
