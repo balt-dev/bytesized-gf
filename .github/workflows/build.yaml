@@ -38,7 +38,7 @@ jobs:
       run: make test
       continue-on-error: true
     - name: make proof
-      run: make proof
+      run: diffenator2 proof -o out/proof -pt 27 fonts/Bytesized-Regular.ttf
     - name: Deploy site
       uses: peaceiris/actions-gh-pages@v4
       if: ${{ github.ref == 'refs/heads/main' }}
