@@ -1,2 +1,4 @@
-# Placeholder file, update the requirements by running `make update`.
--r requirements.in
+numpy==2.*
+pillow==10.*
+opencv-python-headless==4.*
+fonttools==4.*
