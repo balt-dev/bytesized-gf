@@ -78,7 +78,23 @@ def main():
         "licenseDescription": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
         "licenseInfoURL": "https://openfontlicense.org"
     })
-    builder.addOpenTypeFeatures("feature tnum {} tnum;")
+    builder.addOpenTypeFeatures(
+        """
+        languagesystem latn dflt;
+
+        @CombiningTopAccents = [gravecomb acutecomb circumflexcomb tildecomb macroncomb brevecomb dotaccentcomb dieresiscomb ringcomb hungarumlautcomb caroncomb];
+        @CombiningNonTopAccents = [commaaccentcomb cedillacomb ogonekcomb];
+
+        feature tnum {} tnum; 
+        feature liga {
+            script latn;
+                language dflt;
+                
+                sub [i iogonek j]' @CombiningTopAccents by [idotless idotless jdotless];
+                sub [i iogonek j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless idotless jdotless];
+        } liga;
+        """
+    )
     builder.setupOS2(
         version=4,
         sTypoAscender=768,

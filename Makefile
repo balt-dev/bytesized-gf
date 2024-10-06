@@ -1,11 +1,15 @@
-enter-venv:
-	. venv/bin/activate
+setup:
+	python3 -m venv .venv
+	. .venv/bin/activate
+	.venv/bin/python3 -m pip install -r requirements.txt
 
-build: enter-venv
+build:
+	. .venv/bin/activate
 	sources/build.sh
 
 test:
-	fontbakery check-googlefonts -l WARN \
+	. .venv/bin/activate
+	.venv/bin/python3 -m fontbakery check-googlefonts -l WARN \
 		--full-lists --succinct \
 		--html out/report.html \
 		fonts/Bytesized-Regular.ttf
@@ -13,3 +17,4 @@ test:
 proof:
 	rm out/proof -rf
 	diffenator2 proof -o out/proof -pt 27 fonts/Bytesized-Regular.ttf
+	

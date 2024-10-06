@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-. venv/bin/activate
+. .venv/bin/activate
 rm -rf fonts
 mkdir fonts
 python sources/create.py
