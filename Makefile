@@ -16,5 +16,5 @@ test:
 
 proof:
 	. .venv/bin/activate
-	.venv/bin/python3 -m diffenator2 proof -o out/proof -pt 27 fonts/Bytesized-Regular.ttf
+	.venv/bin/python3 -m diffenator2 proof -o out/proof -pt 24 fonts/Bytesized-Regular.ttf
 	

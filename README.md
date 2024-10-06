@@ -36,6 +36,9 @@ Contributions are welcome! Feel free to open a PR with any changes you may want 
 ## v1.001
 - Properly handle dotless i/j
 
+## v1.010
+- Add Ŭ/ŭ
+
 # Trivia
 
 If you trim the font down to only 96 ASCII characters, you can store each glyph in only 12 bits, 

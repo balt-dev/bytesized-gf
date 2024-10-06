@@ -68,13 +68,14 @@ def main():
     builder.setupGlyf(glyph_images)
     builder.setupHorizontalMetrics({name: (512, 0) for name in glyphs})
     builder.setupHorizontalHeader(ascent=768, descent=-512)
+    builder.setupHead(fontRevision = 1.010)
     builder.setupNameTable({
         "familyName": {"en": "Bytesized"},
         "styleName": {"en": "Regular"},
         "uniqueFontIdentifier": "cf2f3838-42c7-4f79-89db-502825af5c9f",
         "fullName": "Bytesized Regular",
         "psName": "Bytesized-Regular",
-        "version": "Version 1.001",
+        "version": "Version 1.010",
         "licenseDescription": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
         "licenseInfoURL": "https://openfontlicense.org"
     })
