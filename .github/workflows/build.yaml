@@ -6,7 +6,7 @@ jobs:
   build:
     name: Build and test
     permissions:
-      contents: read
+      contents: write
       pages: write
     runs-on: ubuntu-latest
     steps:
