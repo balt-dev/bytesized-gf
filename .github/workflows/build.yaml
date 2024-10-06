@@ -5,6 +5,9 @@ on: push
 jobs:
   build:
     name: Build and test
+    permissions:
+      contents: read
+      pages: write
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
