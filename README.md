@@ -38,11 +38,11 @@ To add a new glyph, you need to do three things:
 
    If at all possible, the regular bounding box should only be broken for diacritics.
 
-2. Add a glyph name to glyphnames.txt
+2. Add a glyph name to `glyphnames.txt`
    
    This name doesn't _have_ to match up with the glyph's canonical name, but it probably should.
 
-3. Add the glyph's Unicode codepoint to a new line in glyphset.txt
+3. Add the glyph's Unicode codepoint to a new line in `glyphset.txt`
    
    Each line in this file contains `U+`, then a hexadecimal string dictating the Unicode codepoint the glyph represents.
 
