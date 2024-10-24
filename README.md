@@ -28,6 +28,25 @@ If you want to run any tests or create a proof, `make test` and `make proof` exi
 
 Contributions are welcome! Feel free to open a PR with any changes you may want to make. Make sure to add yourself to `CONTRIBUTORS.txt`.
 
+To add a new glyph, you need to do three things:
+
+1. Draw the new glyph in the spritesheet in `spritesheet.png`.
+   
+   Each glyph has a bounding box of 3 wide by 10 tall, with 1 pixel of padding on each side,
+   but it's strongly recommended to keep it within 4 pixels tall - the box has 4 pixels for top diacritics,
+   4 pixels for the actual glyph, and 2 for bottom diacritics.
+
+   If at all possible, the regular bounding box should only be broken for diacritics.
+
+2. Add a glyph name to glyphnames.txt
+   
+   This name doesn't _have_ to match up with the glyph's canonical name, but it probably should.
+
+3. Add the glyph's Unicode codepoint to a new line in glyphset.txt
+   
+   Each line in this file contains `U+`, then a hexadecimal string dictating the Unicode codepoint the glyph represents.
+
+
 # Changelog
 
 ## v1.000
