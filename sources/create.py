@@ -4,41 +4,36 @@ from enum import IntEnum
 import cv2
 import numpy as np
 from PIL import Image
-from fontTools.fontBuilder import FontBuilder
-from fontTools.pens.ttGlyphPen import TTGlyphPen
+from ufoLib2 import Point, Contour, Glyph, Features, Info, Font
+import tomllib
 
-
-PADDING_X: int = 1
-PADDING_Y: int = 1
 GLYPH_WIDTH: int = 3
 GLYPH_HEIGHT: int = 10
-SHEET_WIDTH: int = 16
 
 def main():
-    with open("sources/glyphset.txt", "rb") as f:
-        glyph_chars = [chr(int(line[2:-1], base=16)) for line in f.readlines()]
-    with open("sources/glyphnames.txt", "r") as f:
-        glyphs = [glyph.strip() for glyph in f.readlines()]
-        
-    with Image.open("sources/spritesheet.png") as im:
-        spritesheet = np.array(im.convert("L")) > 0
-    glyph_x = 0
-    glyph_y = 0
-    glyph_polygons = {}
-    i = 0
-    for glyph in glyphs:
-        pixel_x = PADDING_X + glyph_x * (PADDING_X + GLYPH_WIDTH)
-        pixel_y = PADDING_Y + glyph_y * (PADDING_Y + GLYPH_HEIGHT)
-        unsigned_glyph = spritesheet[pixel_y : pixel_y + GLYPH_HEIGHT, pixel_x : pixel_x + GLYPH_WIDTH].astype(np.uint8)
-        print(glyph_chars[i], unsigned_glyph)
-        unsigned_glyph *= 255
-        unsigned_glyph -= 128
-        assert glyph not in glyph_polygons, f"duplicate glyph {glyph}"
-        glyph_polygons[glyph] = get_contour(unsigned_glyph)
-        glyph_x += 1
-        glyph_y += glyph_x // SHEET_WIDTH
-        glyph_x %= SHEET_WIDTH
-        i += 1
+    with open("sources/glyphs.toml", "rb") as f:
+        doc = tomllib.load(f)
+    
+    glyphs = {}
+    for glyph, data in doc.items():
+        print(f"Processing glyph `{glyph}`: {data}")
+        os.rename("sources/glyphs/" + data["image"], f"sources/glyphs/")
+    return
+        try:
+            data["codepoints"] = data.get("codepoints", [])
+            for i, codepoint in enumerate(data["codepoints"]):
+                assert type(codepoint) is int,  f"Codepoint {i+1} must be an integer!"
+                assert 0 <= codepoint < 0x110000,  f"Codepoint {i+1} must be in the range [0, 0x10FFFF]!"
+                assert not (0xD800 <= codepoint < 0xE000),  f"Codepoint {i+1} must not be in the range [0xD800, 0xD8FF]!"
+            assert "image" in data, "Must have `image` field!"
+            with Image.open(data["image"]) as im:
+                unsigned_glyph = (np.array(img.convert("L")) > 128).astype(np.uint8)
+            unsigned_glyph *= 255
+            unsigned_glyph -= 128
+            contours = get_contour(unsigned_glyph)
+
+        except Exception as err:
+            print(f"Failed to process glyph `{glyph}`: {err}")
 
     # Move .notdef to the front
     glyph_polygons = {'.notdef': glyph_polygons[".notdef"]} | glyph_polygons
@@ -202,12 +197,8 @@ def get_contour(image: np.ndarray[np.int8]) -> list[list[(int, int)]]:
             poly = poly[::-1]
         polygons.append(poly)
     
-    return image, polygons
+    return polygons
 
-        
-    
-    
 
 if __name__ == "__main__":
-
     main()

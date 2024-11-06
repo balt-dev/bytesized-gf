@@ -15,12 +15,12 @@ it's still quite readable!
 
 # Building
 
-Bytesized is created dynamically from a spritesheet found in `sources/spritesheet.png`.
+Bytesized is created dynamically from multiple images found in `sources/glyphs`.
 
 To set up for building and testing, run `make setup`.
 
-In order to build the font, run `make build` at the root of the project. 
-This will create the TTF, and put it in `fonts/Bytesized-Regular.ttf`.
+In order to build the font, run `make generate build` at the root of the project. 
+This will create the UFO, and then from that the TTF, and put it in `fonts/Bytesized-Regular.ttf`.
 
 If you want to run any tests or create a proof, `make test` and `make proof` exist for those.
 
@@ -28,23 +28,23 @@ If you want to run any tests or create a proof, `make test` and `make proof` exi
 
 Contributions are welcome! Feel free to open a PR with any changes you may want to make. Make sure to add yourself to `CONTRIBUTORS.txt`.
 
-To add a new glyph, you need to do three things:
+**DO NOT edit the .ufo file in the `sources` directory! It will be overwritten.** Instead, do this:
 
-1. Draw the new glyph in the spritesheet in `spritesheet.png`.
+1. Draw the new glyph in `sources/glyphs/<name>.png`, where `<name>` can be anything you like
    
-   Each glyph has a bounding box of 3 wide by 10 tall, with 1 pixel of padding on each side,
-   but it's strongly recommended to keep it within 4 pixels tall - the box has 4 pixels for top diacritics,
+   Each glyph must have an image size of 3 wide by 10 tall,
+   but it's strongly recommended to keep it within 4 pixels tall - 
+   each image has 4 pixels for top diacritics,
    4 pixels for the actual glyph, and 2 for bottom diacritics.
 
    If at all possible, the regular bounding box should only be broken for diacritics.
 
-2. Add a glyph name to `glyphnames.txt`
-   
-   This name doesn't _have_ to match up with the glyph's canonical name, but it probably should.
+2. Add the metadata to `sources/glyphs.toml`
 
-3. Add the glyph's Unicode codepoint to a new line in `glyphset.txt`
-   
-   Each line in this file contains `U+`, then a hexadecimal string dictating the Unicode codepoint the glyph represents.
+   Each entry in this file has:
+   - A name, dictating its glyph name in the font - this is the text between `['` and `']`
+   - A list of Unicode codepoints that it represents - this is the `codepoints` field
+   - A path to the image that the glyph shows - this is the `image` field, relative to `sources/glyphs/`
 
 
 # Changelog
@@ -57,6 +57,9 @@ To add a new glyph, you need to do three things:
 
 ## v1.010
 - Add Ŭ/ŭ
+
+## v1.011
+- Change file layout of repository, no glyphs have changed
 
 # Trivia
 
