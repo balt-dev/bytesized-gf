@@ -30,14 +30,12 @@ jobs:
       id: zip-name
       shell: bash
       run: echo "ZIP_NAME=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')-fonts" >> $GITHUB_ENV
-    - name: Set up venv
-      run: make setup
     - name: Build font
-      run: make generate build
+      run: make setup generate build
     - name: Check with fontbakery
       run: make test
       continue-on-error: true
-    - name: make proof
+    - name: Create proof
       run: make proof
     - name: Deploy site
       uses: peaceiris/actions-gh-pages@v4
