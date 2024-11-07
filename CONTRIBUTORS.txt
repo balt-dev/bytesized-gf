@@ -9,4 +9,4 @@
 # Names should be added to this file as:
 # Name <email address>
 
-Jack, a.k.a @baltdev # I'm not quite comfortable using my full legal name here. _Many_ people know of my GitHub account.
+baltdev <heptor42+bytesized@gmail.com>
