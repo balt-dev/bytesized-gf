@@ -3,108 +3,89 @@
 from enum import IntEnum
 import cv2
 import numpy as np
+from ufoLib2.objects import *
 from PIL import Image
-from ufoLib2 import Point, Contour, Glyph, Features, Info, Font
+from fontTools.ufoLib import UFOWriter, UFOFileStructure
 import tomllib
+import os
 
-GLYPH_WIDTH: int = 3
+GLYPH_WIDTH: int = 4
 GLYPH_HEIGHT: int = 10
+SCALE: int = 2
 
 def main():
-    with open("sources/glyphs.toml", "rb") as f:
+    with open("scripts/glyphs.toml", "rb") as f:
         doc = tomllib.load(f)
-    
-    glyphs = {}
+    font_obj = Font(
+        info = Info(
+            familyName =  "Bytesized",
+            styleName = "Regular",
+            unitsPerEm = 8 * SCALE,
+            postscriptFullName = "Bytesized Regular",
+            postscriptFontName = "Bytesized-Regular",
+            versionMajor = 1,
+            versionMinor = 0,
+            openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
+            openTypeNameLicenseURL = "https://openfontlicense.org",
+            openTypeOS2TypoAscender = 6 * SCALE,
+            openTypeOS2TypoDescender = -4 * SCALE,
+            openTypeHheaAscender = 6 * SCALE, 
+            openTypeHheaDescender = -4 * SCALE,
+            openTypeOS2TypoLineGap = 0,
+            openTypeOS2WinAscent = 5 * SCALE,
+            openTypeOS2WinDescent = 3 * SCALE,
+            openTypeOS2CodePageRanges = [1, 0],
+            # These are lists of set bits. It would be GREAT if that was in the documentation. :/
+            openTypeOS2Type = [],
+            openTypeOS2Selection = [7],
+        ),
+        features = Features("""
+            languagesystem latn dflt;
+
+            @CombiningTopAccents = [gravecomb acutecomb circumflexcomb tildecomb macroncomb brevecomb dotaccentcomb dieresiscomb ringcomb hungarumlautcomb caroncomb];
+            @CombiningNonTopAccents = [commaaccentcomb cedillacomb ogonekcomb];
+
+            feature tnum {} tnum; 
+            feature liga {
+                script latn;
+                    language dflt;
+                    
+                    sub [i iogonek j]' @CombiningTopAccents by [idotless idotless jdotless];
+                    sub [i iogonek j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless idotless jdotless];
+            } liga;
+            """
+        )
+    )
     for glyph, data in doc.items():
         print(f"Processing glyph `{glyph}`: {data}")
-        os.rename("sources/glyphs/" + data["image"], f"sources/glyphs/")
-    return
         try:
             data["codepoints"] = data.get("codepoints", [])
             for i, codepoint in enumerate(data["codepoints"]):
                 assert type(codepoint) is int,  f"Codepoint {i+1} must be an integer!"
                 assert 0 <= codepoint < 0x110000,  f"Codepoint {i+1} must be in the range [0, 0x10FFFF]!"
                 assert not (0xD800 <= codepoint < 0xE000),  f"Codepoint {i+1} must not be in the range [0xD800, 0xD8FF]!"
-            assert "image" in data, "Must have `image` field!"
-            with Image.open(data["image"]) as im:
+            assert "image" in data, "Must have an `image` field!"
+            with Image.open("scripts/glyphs/" + data["image"]) as img:
                 unsigned_glyph = (np.array(img.convert("L")) > 128).astype(np.uint8)
             unsigned_glyph *= 255
             unsigned_glyph -= 128
-            contours = get_contour(unsigned_glyph)
-
+            glyph = Glyph(name = glyph, width = GLYPH_WIDTH * SCALE, height = GLYPH_HEIGHT * SCALE, unicodes = data["codepoints"])
+            glyph.appendGuideline(Guideline(y = 2 * SCALE))
+            glyph.appendGuideline(Guideline(y = 6 * SCALE))
+            raw_contours = get_contour(unsigned_glyph)
+            for raw_contour in raw_contours:
+                contour = Contour()
+                for raw_point in raw_contour:
+                    contour.points.append(Point(raw_point[0], raw_point[1], "line", False))
+                glyph.appendContour(contour)
+            font_obj.addGlyph(glyph)
         except Exception as err:
             print(f"Failed to process glyph `{glyph}`: {err}")
 
-    # Move .notdef to the front
-    glyph_polygons = {'.notdef': glyph_polygons[".notdef"]} | glyph_polygons
-    glyphs.remove(".notdef")
-    glyphs.insert(0, ".notdef")
-    glyph_chars.remove('\uFFFF')
-    glyph_chars.insert(0, '\uFFFF')
-
-    for (glyph, (image, polys)) in glyph_polygons.items():
-        bs='\n'
-
-    builder = FontBuilder(1024)
-    builder.setupGlyphOrder(glyphs)
-    builder.setupCharacterMap({ord(key): value for key, value in zip(glyph_chars, glyphs)})
-
-    glyph_images = {}
-    for (name, (_, polys)) in glyph_polygons.items():
-        pen = TTGlyphPen(None)
-        for poly in polys:
-            pen.moveTo((poly[0][0] * 128, poly[0][1] * 128))
-            for coord in poly[1:]:
-                pen.lineTo((coord[0] * 128, coord[1] * 128))
-            pen.closePath()
-        glyph_images[name] = pen.glyph()
-    print(len(glyph_chars), len(glyphs), len(glyph_images))
-    
-    builder.setupGlyf(glyph_images)
-    builder.setupHorizontalMetrics({name: (512, 0) for name in glyphs})
-    builder.setupHorizontalHeader(ascent=768, descent=-512)
-    builder.setupHead(fontRevision = 1.010)
-    builder.setupNameTable({
-        "familyName": {"en": "Bytesized"},
-        "styleName": {"en": "Regular"},
-        "uniqueFontIdentifier": "cf2f3838-42c7-4f79-89db-502825af5c9f",
-        "fullName": "Bytesized Regular",
-        "psName": "Bytesized-Regular",
-        "version": "Version 1.010",
-        "licenseDescription": "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
-        "licenseInfoURL": "https://openfontlicense.org"
-    })
-    builder.addOpenTypeFeatures(
-        """
-        languagesystem latn dflt;
-
-        @CombiningTopAccents = [gravecomb acutecomb circumflexcomb tildecomb macroncomb brevecomb dotaccentcomb dieresiscomb ringcomb hungarumlautcomb caroncomb];
-        @CombiningNonTopAccents = [commaaccentcomb cedillacomb ogonekcomb];
-
-        feature tnum {} tnum; 
-        feature liga {
-            script latn;
-                language dflt;
-                
-                sub [i iogonek j]' @CombiningTopAccents by [idotless idotless jdotless];
-                sub [i iogonek j]' @CombiningNonTopAccents @CombiningTopAccents by [idotless idotless jdotless];
-        } liga;
-        """
-    )
-    builder.setupOS2(
-        version=4,
-        sTypoAscender=768,
-        sTypoDescender=-512,
-        sTypoLineGap=0,
-        usWinAscent=640,
-        usWinDescent=384,
-        fsSelection=0b00000000_11000000,
-        fsType=0,
-        ulCodePageRange1=1,
-        ulCodePageRange2=0
-    )
-    builder.setupPost()
-    builder.save("fonts/Bytesized-Regular.ttf")
+    if os.path.exists("scripts/Bytesized-Regular.ufo"):
+        os.remove("scripts/Bytesized-Regular.ufo")
+    writer = UFOWriter("scripts/Bytesized-Regular.ufo", structure = UFOFileStructure.ZIP)
+    font_obj.write(writer, True)
 
 
 class Direction(IntEnum):
@@ -135,7 +116,6 @@ class Direction(IntEnum):
     
     def check_corner(self) -> np.ndarray[int]:
         return Direction((self - 1) % 4).check()
-
 
 
 def get_contour(image: np.ndarray[np.int8]) -> list[list[(int, int)]]:
@@ -192,7 +172,7 @@ def get_contour(image: np.ndarray[np.int8]) -> list[list[(int, int)]]:
                 polygon.append((*(int(p) for p in pt),))
                 dir = Direction((dir + 1) % 4)
             first = False
-        poly = [(point[1], GLYPH_HEIGHT - 3 - point[0]) for point in polygon[:-1]]
+        poly = [(point[1] * SCALE, (GLYPH_HEIGHT - 3 - point[0]) * SCALE) for point in polygon[:-1]]
         if index > 0:
             poly = poly[::-1]
         polygons.append(poly)

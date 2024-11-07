@@ -15,7 +15,7 @@ it's still quite readable!
 
 # Building
 
-Bytesized is created dynamically from multiple images found in `sources/glyphs`.
+Bytesized is created dynamically from multiple images found in `scripts/glyphs`.
 
 To set up for building and testing, run `make setup`.
 
@@ -24,13 +24,15 @@ This will create the UFO, and then from that the TTF, and put it in `fonts/Bytes
 
 If you want to run any tests or create a proof, `make test` and `make proof` exist for those.
 
+For short, you can run `make generate build test` if you're working on the font.
+
 # Contribution
 
 Contributions are welcome! Feel free to open a PR with any changes you may want to make. Make sure to add yourself to `CONTRIBUTORS.txt`.
 
 **DO NOT edit the .ufo file in the `sources` directory! It will be overwritten.** Instead, do this:
 
-1. Draw the new glyph in `sources/glyphs/<name>.png`, where `<name>` can be anything you like
+1. Draw the new glyph in `scripts/glyphs/<name>.png`, where `<name>` can be anything you like
    
    Each glyph must have an image size of 3 wide by 10 tall,
    but it's strongly recommended to keep it within 4 pixels tall - 
@@ -39,12 +41,12 @@ Contributions are welcome! Feel free to open a PR with any changes you may want 
 
    If at all possible, the regular bounding box should only be broken for diacritics.
 
-2. Add the metadata to `sources/glyphs.toml`
+2. Add the metadata to `scripts/glyphs.toml`
 
    Each entry in this file has:
    - A name, dictating its glyph name in the font - this is the text between `['` and `']`
    - A list of Unicode codepoints that it represents - this is the `codepoints` field
-   - A path to the image that the glyph shows - this is the `image` field, relative to `sources/glyphs/`
+   - A path to the image that the glyph shows - this is the `image` field, relative to `scripts/glyphs/`
 
 
 # Changelog

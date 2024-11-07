@@ -1,0 +1,1385 @@
+# DO NOT move .notdef from the front of the file!
+['.notdef']
+codepoints = [0xFFFD]
+image =  ".notdef.png"
+
+['space']
+codepoints = [0x20, 0xA0]
+image =  "space.png"
+
+['exclam']
+codepoints = [0x21]
+image =  "exclam.png"
+
+['quotedbl']
+codepoints = [0x22]
+image =  "quotedbl.png"
+
+['numbersign']
+codepoints = [0x23]
+image =  "numbersign.png"
+
+['dollar']
+codepoints = [0x24]
+image =  "dollar.png"
+
+['percent']
+codepoints = [0x25]
+image =  "percent.png"
+
+['ampersand']
+codepoints = [0x26]
+image =  "ampersand.png"
+
+['quotesingle']
+codepoints = [0x27]
+image =  "quotesingle.png"
+
+['parenleft']
+codepoints = [0x28]
+image =  "parenleft.png"
+
+['parenright']
+codepoints = [0x29]
+image =  "parenright.png"
+
+['asterisk']
+codepoints = [0x2A]
+image =  "asterisk.png"
+
+['plus']
+codepoints = [0x2B]
+image =  "plus.png"
+
+['comma']
+codepoints = [0x2C]
+image =  "comma.png"
+
+['hyphen']
+codepoints = [0x2D]
+image =  "hyphen.png"
+
+['period']
+codepoints = [0x2E]
+image =  "period.png"
+
+['slash']
+codepoints = [0x2F]
+image =  "slash.png"
+
+['zero']
+codepoints = [0x30]
+image =  "zero.png"
+
+['one']
+codepoints = [0x31]
+image =  "one.png"
+
+['two']
+codepoints = [0x32]
+image =  "two.png"
+
+['three']
+codepoints = [0x33, 0x01B7]
+image =  "three.png"
+
+['four']
+codepoints = [0x34]
+image =  "four.png"
+
+['five']
+codepoints = [0x35]
+image =  "five.png"
+
+['six']
+codepoints = [0x36]
+image =  "six.png"
+
+['seven']
+codepoints = [0x37]
+image =  "seven.png"
+
+['eight']
+codepoints = [0x38]
+image =  "eight.png"
+
+['nine']
+codepoints = [0x39]
+image =  "nine.png"
+
+['colon']
+codepoints = [0x3A]
+image =  "colon.png"
+
+['semicolon']
+codepoints = [0x3B]
+image =  "semicolon.png"
+
+['less']
+codepoints = [0x3C]
+image =  "less.png"
+
+['equal']
+codepoints = [0x3D]
+image =  "equal.png"
+
+['greater']
+codepoints = [0x3E]
+image =  "greater.png"
+
+['question']
+codepoints = [0x3F]
+image =  "question.png"
+
+['at']
+codepoints = [0x40]
+image =  "at.png"
+
+['A']
+codepoints = [0x41]
+image =  "A.png"
+
+['B']
+codepoints = [0x42]
+image =  "B.png"
+
+['C']
+codepoints = [0x43]
+image =  "C.png"
+
+['D']
+codepoints = [0x44]
+image =  "D.png"
+
+['E']
+codepoints = [0x45]
+image =  "E.png"
+
+['F']
+codepoints = [0x46]
+image =  "F.png"
+
+['G']
+codepoints = [0x47]
+image =  "G.png"
+
+['H']
+codepoints = [0x48]
+image =  "H.png"
+
+['I']
+codepoints = [0x49]
+image =  "I.png"
+
+['J']
+codepoints = [0x4A]
+image =  "J.png"
+
+['K']
+codepoints = [0x4B]
+image =  "K.png"
+
+['L']
+codepoints = [0x4C]
+image =  "L.png"
+
+['M']
+codepoints = [0x4D]
+image =  "M.png"
+
+['N']
+codepoints = [0x4E]
+image =  "N.png"
+
+['O']
+codepoints = [0x4F]
+image =  "O.png"
+
+['P']
+codepoints = [0x50]
+image =  "P.png"
+
+['Q']
+codepoints = [0x51]
+image =  "Q.png"
+
+['R']
+codepoints = [0x52]
+image =  "R.png"
+
+['S']
+codepoints = [0x53]
+image =  "S.png"
+
+['T']
+codepoints = [0x54]
+image =  "T.png"
+
+['U']
+codepoints = [0x55]
+image =  "U.png"
+
+['V']
+codepoints = [0x56]
+image =  "V.png"
+
+['W']
+codepoints = [0x57]
+image =  "W.png"
+
+['X']
+codepoints = [0x58]
+image =  "X.png"
+
+['Y']
+codepoints = [0x59]
+image =  "Y.png"
+
+['Z']
+codepoints = [0x5A]
+image =  "Z.png"
+
+['bracketleft']
+codepoints = [0x5B]
+image =  "bracketleft.png"
+
+['backslash']
+codepoints = [0x5C]
+image =  "backslash.png"
+
+['bracketright']
+codepoints = [0x5D]
+image =  "bracketright.png"
+
+['asciicircum']
+codepoints = [0x5E]
+image =  "asciicircum.png"
+
+['underscore']
+codepoints = [0x5F]
+image =  "underscore.png"
+
+['grave']
+codepoints = [0x60]
+image =  "grave.png"
+
+['a']
+codepoints = [0x61]
+image =  "a.png"
+
+['b']
+codepoints = [0x62]
+image =  "b.png"
+
+['c']
+codepoints = [0x63]
+image =  "c.png"
+
+['d']
+codepoints = [0x64]
+image =  "d.png"
+
+['e']
+codepoints = [0x65]
+image =  "e.png"
+
+['f']
+codepoints = [0x66]
+image =  "f.png"
+
+['g']
+codepoints = [0x67]
+image =  "g.png"
+
+['h']
+codepoints = [0x68]
+image =  "h.png"
+
+['i']
+codepoints = [0x69]
+image =  "i.png"
+
+['j']
+codepoints = [0x6A]
+image =  "j.png"
+
+['k']
+codepoints = [0x6B]
+image =  "k.png"
+
+['l']
+codepoints = [0x6C]
+image =  "l.png"
+
+['m']
+codepoints = [0x6D]
+image =  "m.png"
+
+['n']
+codepoints = [0x6E]
+image =  "n.png"
+
+['o']
+codepoints = [0x6F]
+image =  "o.png"
+
+['p']
+codepoints = [0x70]
+image =  "p.png"
+
+['q']
+codepoints = [0x71]
+image =  "q.png"
+
+['r']
+codepoints = [0x72]
+image =  "r.png"
+
+['s']
+codepoints = [0x73]
+image =  "s.png"
+
+['t']
+codepoints = [0x74]
+image =  "t.png"
+
+['u']
+codepoints = [0x75]
+image =  "u.png"
+
+['v']
+codepoints = [0x76]
+image =  "v.png"
+
+['w']
+codepoints = [0x77]
+image =  "w.png"
+
+['x']
+codepoints = [0x78]
+image =  "x.png"
+
+['y']
+codepoints = [0x79]
+image =  "y.png"
+
+['z']
+codepoints = [0x7A]
+image =  "z.png"
+
+['braceleft']
+codepoints = [0x7B]
+image =  "braceleft.png"
+
+['bar']
+codepoints = [0x7C]
+image =  "bar.png"
+
+['braceright']
+codepoints = [0x7D]
+image =  "braceright.png"
+
+['asciitilde']
+codepoints = [0x7E]
+image =  "asciitilde.png"
+
+['exclamdown']
+codepoints = [0xA1]
+image =  "exclamdown.png"
+
+['cent']
+codepoints = [0xA2]
+image =  "cent.png"
+
+['sterling']
+codepoints = [0xA3]
+image =  "sterling.png"
+
+['yen']
+codepoints = [0xA5]
+image =  "yen.png"
+
+['section']
+codepoints = [0xA7]
+image =  "section.png"
+
+['dieresis']
+codepoints = [0xA8]
+image =  "dieresis.png"
+
+['copyright']
+codepoints = [0xA9]
+image =  "copyright.png"
+
+['ordfeminine']
+codepoints = [0xAA]
+image =  "ordfeminine.png"
+
+['guillemetleft']
+codepoints = [0xAB]
+image =  "guillemetleft.png"
+
+['registered']
+codepoints = [0xAE]
+image =  "registered.png"
+
+['macron']
+codepoints = [0xAF]
+image =  "macron.png"
+
+['degree']
+codepoints = [0xB0]
+image =  "degree.png"
+
+['acute']
+codepoints = [0xB4]
+image =  "acute.png"
+
+['paragraph']
+codepoints = [0xB6]
+image =  "paragraph.png"
+
+['periodcentered']
+codepoints = [0xB7]
+image =  "periodcentered.png"
+
+['cedilla']
+codepoints = [0xB8]
+image =  "cedilla.png"
+
+['ordmasculine']
+codepoints = [0xBA]
+image =  "ordmasculine.png"
+
+['guillemetright']
+codepoints = [0xBB]
+image =  "guillemetright.png"
+
+['questiondown']
+codepoints = [0xBF]
+image =  "questiondown.png"
+
+['Agrave']
+codepoints = [0xC0]
+image =  "Agrave.png"
+
+['Aacute']
+codepoints = [0xC1]
+image =  "Aacute.png"
+
+['Acircumflex']
+codepoints = [0xC2]
+image =  "Acircumflex.png"
+
+['Atilde']
+codepoints = [0xC3]
+image =  "Atilde.png"
+
+['Adieresis']
+codepoints = [0xC4]
+image =  "Adieresis.png"
+
+['Aring']
+codepoints = [0xC5]
+image =  "Aring.png"
+
+['AE']
+codepoints = [0xC6]
+image =  "AE.png"
+
+['Ccedilla']
+codepoints = [0xC7]
+image =  "Ccedilla.png"
+
+['Egrave']
+codepoints = [0xC8]
+image =  "Egrave.png"
+
+['Eacute']
+codepoints = [0xC9]
+image =  "Eacute.png"
+
+['Ecircumflex']
+codepoints = [0xCA]
+image =  "Ecircumflex.png"
+
+['Edieresis']
+codepoints = [0xCB]
+image =  "Edieresis.png"
+
+['Igrave']
+codepoints = [0xCC]
+image =  "Igrave.png"
+
+['Iacute']
+codepoints = [0xCD]
+image =  "Iacute.png"
+
+['Icircumflex']
+codepoints = [0xCE]
+image =  "Icircumflex.png"
+
+['Idieresis']
+codepoints = [0xCF]
+image =  "Idieresis.png"
+
+['Eth']
+codepoints = [0xD0]
+image =  "Eth.png"
+
+['Ntilde']
+codepoints = [0xD1]
+image =  "Ntilde.png"
+
+['Ograve']
+codepoints = [0xD2]
+image =  "Ograve.png"
+
+['Oacute']
+codepoints = [0xD3]
+image =  "Oacute.png"
+
+['Ocircumflex']
+codepoints = [0xD4]
+image =  "Ocircumflex.png"
+
+['Otilde']
+codepoints = [0xD5]
+image =  "Otilde.png"
+
+['Odieresis']
+codepoints = [0xD6]
+image =  "Odieresis.png"
+
+['multiply']
+codepoints = [0xD7]
+image =  "multiply.png"
+
+['Oslash']
+codepoints = [0xD8]
+image =  "Oslash.png"
+
+['Ugrave']
+codepoints = [0xD9]
+image =  "Ugrave.png"
+
+['Uacute']
+codepoints = [0xDA]
+image =  "Uacute.png"
+
+['Ucircumflex']
+codepoints = [0xDB]
+image =  "Ucircumflex.png"
+
+['Udieresis']
+codepoints = [0xDC]
+image =  "Udieresis.png"
+
+['Yacute']
+codepoints = [0xDD]
+image =  "Yacute.png"
+
+['Thorn']
+codepoints = [0xDE]
+image =  "Thorn.png"
+
+['germandbls']
+codepoints = [0xDF]
+image =  "germandbls.png"
+
+['agrave']
+codepoints = [0xE0]
+image =  "agrave.png"
+
+['aacute']
+codepoints = [0xE1]
+image =  "aacute.png"
+
+['acircumflex']
+codepoints = [0xE2]
+image =  "acircumflex.png"
+
+['atilde']
+codepoints = [0xE3]
+image =  "atilde.png"
+
+['adieresis']
+codepoints = [0xE4]
+image =  "adieresis.png"
+
+['aring']
+codepoints = [0xE5]
+image =  "aring.png"
+
+['ae']
+codepoints = [0xE6]
+image =  "ae.png"
+
+['ccedilla']
+codepoints = [0xE7]
+image =  "ccedilla.png"
+
+['egrave']
+codepoints = [0xE8]
+image =  "egrave.png"
+
+['eacute']
+codepoints = [0xE9]
+image =  "eacute.png"
+
+['ecircumflex']
+codepoints = [0xEA]
+image =  "ecircumflex.png"
+
+['edieresis']
+codepoints = [0xEB]
+image =  "edieresis.png"
+
+['igrave']
+codepoints = [0xEC]
+image =  "igrave.png"
+
+['iacute']
+codepoints = [0xED]
+image =  "iacute.png"
+
+['icircumflex']
+codepoints = [0xEE]
+image =  "icircumflex.png"
+
+['idieresis']
+codepoints = [0xEF]
+image =  "idieresis.png"
+
+['eth']
+codepoints = [0xF0]
+image =  "eth.png"
+
+['ntilde']
+codepoints = [0xF1]
+image =  "ntilde.png"
+
+['ograve']
+codepoints = [0xF2]
+image =  "ograve.png"
+
+['oacute']
+codepoints = [0xF3]
+image =  "oacute.png"
+
+['ocircumflex']
+codepoints = [0xF4]
+image =  "ocircumflex.png"
+
+['otilde']
+codepoints = [0xF5]
+image =  "otilde.png"
+
+['odieresis']
+codepoints = [0xF6]
+image =  "odieresis.png"
+
+['divide']
+codepoints = [0xF7]
+image =  "divide.png"
+
+['oslash']
+codepoints = [0xF8]
+image =  "oslash.png"
+
+['ugrave']
+codepoints = [0xF9]
+image =  "ugrave.png"
+
+['uacute']
+codepoints = [0xFA]
+image =  "uacute.png"
+
+['ucircumflex']
+codepoints = [0xFB]
+image =  "ucircumflex.png"
+
+['udieresis']
+codepoints = [0xFC]
+image =  "udieresis.png"
+
+['yacute']
+codepoints = [0xFD]
+image =  "yacute.png"
+
+['thorn']
+codepoints = [0xFE]
+image =  "thorn.png"
+
+['ydieresis']
+codepoints = [0xFF]
+image =  "ydieresis.png"
+
+['Amacron']
+codepoints = [0x0100]
+image =  "Amacron.png"
+
+['amacron']
+codepoints = [0x0101]
+image =  "amacron.png"
+
+['Abreve']
+codepoints = [0x0102]
+image =  "Abreve.png"
+
+['abreve']
+codepoints = [0x0103]
+image =  "abreve.png"
+
+['Aogonek']
+codepoints = [0x0104]
+image =  "Aogonek.png"
+
+['aogonek']
+codepoints = [0x0105]
+image =  "aogonek.png"
+
+['Cacute']
+codepoints = [0x0106]
+image =  "Cacute.png"
+
+['cacute']
+codepoints = [0x0107]
+image =  "cacute.png"
+
+['Cdotaccent']
+codepoints = [0x010A]
+image =  "Cdotaccent.png"
+
+['cdotaccent']
+codepoints = [0x010B]
+image =  "cdotaccent.png"
+
+['Ccaron']
+codepoints = [0x010C]
+image =  "Ccaron.png"
+
+['ccaron']
+codepoints = [0x010D]
+image =  "ccaron.png"
+
+['Dcaron']
+codepoints = [0x010E]
+image =  "Dcaron.png"
+
+['dcaron']
+codepoints = [0x010F]
+image =  "dcaron.png"
+
+['Dcroat']
+codepoints = [0x0110]
+image =  "Dcroat.png"
+
+['dcroat']
+codepoints = [0x0111]
+image =  "dcroat.png"
+
+['Emacron']
+codepoints = [0x0112]
+image =  "Emacron.png"
+
+['emacron']
+codepoints = [0x0113]
+image =  "emacron.png"
+
+['Edotaccent']
+codepoints = [0x0116]
+image =  "Edotaccent.png"
+
+['edotaccent']
+codepoints = [0x0117]
+image =  "edotaccent.png"
+
+['Eogonek']
+codepoints = [0x0118]
+image =  "Eogonek.png"
+
+['eogonek']
+codepoints = [0x0119]
+image =  "eogonek.png"
+
+['Ecaron']
+codepoints = [0x011A]
+image =  "Ecaron.png"
+
+['ecaron']
+codepoints = [0x011B]
+image =  "ecaron.png"
+
+['Gbreve']
+codepoints = [0x011E]
+image =  "Gbreve.png"
+
+['gbreve']
+codepoints = [0x011F]
+image =  "gbreve.png"
+
+['Gdotaccent']
+codepoints = [0x0120]
+image =  "Gdotaccent.png"
+
+['gdotaccent']
+codepoints = [0x0121]
+image =  "gdotaccent.png"
+
+['Gcommaaccent']
+codepoints = [0x0122]
+image =  "Gcommaaccent.png"
+
+['gcommaaccent']
+codepoints = [0x0123]
+image =  "gcommaaccent.png"
+
+['Hbar']
+codepoints = [0x0126]
+image =  "Hbar.png"
+
+['hbar']
+codepoints = [0x0127]
+image =  "hbar.png"
+
+['Imacron']
+codepoints = [0x012A]
+image =  "Imacron.png"
+
+['imacron']
+codepoints = [0x012B]
+image =  "imacron.png"
+
+['Iogonek']
+codepoints = [0x012E]
+image =  "Iogonek.png"
+
+['iogonek']
+codepoints = [0x012F]
+image =  "iogonek.png"
+
+['Idotaccent']
+codepoints = [0x0130]
+image =  "Idotaccent.png"
+
+['idotless']
+codepoints = [0x0131]
+image =  "idotless.png"
+
+['Kcommaaccent']
+codepoints = [0x0136]
+image =  "Kcommaaccent.png"
+
+['kcommaaccent']
+codepoints = [0x0137]
+image =  "kcommaaccent.png"
+
+['Lacute']
+codepoints = [0x0139]
+image =  "Lacute.png"
+
+['lacute']
+codepoints = [0x013A]
+image =  "lacute.png"
+
+['Lcommaaccent']
+codepoints = [0x013B]
+image =  "Lcommaaccent.png"
+
+['lcommaaccent']
+codepoints = [0x013C]
+image =  "lcommaaccent.png"
+
+['Lcaron']
+codepoints = [0x013D]
+image =  "Lcaron.png"
+
+['lcaron']
+codepoints = [0x013E]
+image =  "lcaron.png"
+
+['Lslash']
+codepoints = [0x0141]
+image =  "Lslash.png"
+
+['lslash']
+codepoints = [0x0142]
+image =  "lslash.png"
+
+['Nacute']
+codepoints = [0x0143]
+image =  "Nacute.png"
+
+['nacute']
+codepoints = [0x0144]
+image =  "nacute.png"
+
+['Ncommaaccent']
+codepoints = [0x0145]
+image =  "Ncommaaccent.png"
+
+['ncommaaccent']
+codepoints = [0x0146]
+image =  "ncommaaccent.png"
+
+['Ncaron']
+codepoints = [0x0147]
+image =  "Ncaron.png"
+
+['ncaron']
+codepoints = [0x0148]
+image =  "ncaron.png"
+
+['Ohungarumlaut']
+codepoints = [0x0150]
+image =  "Ohungarumlaut.png"
+
+['ohungarumlaut']
+codepoints = [0x0151]
+image =  "ohungarumlaut.png"
+
+['OE']
+codepoints = [0x0152]
+image =  "OE.png"
+
+['oe']
+codepoints = [0x0153]
+image =  "oe.png"
+
+['Racute']
+codepoints = [0x0154]
+image =  "Racute.png"
+
+['racute']
+codepoints = [0x0155]
+image =  "racute.png"
+
+['Rcaron']
+codepoints = [0x0158]
+image =  "Rcaron.png"
+
+['rcaron']
+codepoints = [0x0159]
+image =  "rcaron.png"
+
+['Sacute']
+codepoints = [0x015A]
+image =  "Sacute.png"
+
+['sacute']
+codepoints = [0x015B]
+image =  "sacute.png"
+
+['Scedilla']
+codepoints = [0x015E]
+image =  "Scedilla.png"
+
+['scedilla']
+codepoints = [0x015F]
+image =  "scedilla.png"
+
+['Scaron']
+codepoints = [0x0160]
+image =  "Scaron.png"
+
+['scaron']
+codepoints = [0x0161]
+image =  "scaron.png"
+
+['Tcaron']
+codepoints = [0x0164]
+image =  "Tcaron.png"
+
+['tcaron']
+codepoints = [0x0165]
+image =  "tcaron.png"
+
+['Umacron']
+codepoints = [0x016A]
+image =  "Umacron.png"
+
+['umacron']
+codepoints = [0x016B]
+image =  "umacron.png"
+
+['Uring']
+codepoints = [0x016E]
+image =  "Uring.png"
+
+['uring']
+codepoints = [0x016F]
+image =  "uring.png"
+
+['Uhungarumlaut']
+codepoints = [0x0170]
+image =  "Uhungarumlaut.png"
+
+['uhungarumlaut']
+codepoints = [0x0171]
+image =  "uhungarumlaut.png"
+
+['Uogonek']
+codepoints = [0x0172]
+image =  "Uogonek.png"
+
+['uogonek']
+codepoints = [0x0173]
+image =  "uogonek.png"
+
+['Wcircumflex']
+codepoints = [0x0174]
+image =  "Wcircumflex.png"
+
+['wcircumflex']
+codepoints = [0x0175]
+image =  "wcircumflex.png"
+
+['Ycircumflex']
+codepoints = [0x0176]
+image =  "Ycircumflex.png"
+
+['ycircumflex']
+codepoints = [0x0177]
+image =  "ycircumflex.png"
+
+['Ydieresis']
+codepoints = [0x0178]
+image =  "Ydieresis.png"
+
+['Zacute']
+codepoints = [0x0179]
+image =  "Zacute.png"
+
+['zacute']
+codepoints = [0x017A]
+image =  "zacute.png"
+
+['Zdotaccent']
+codepoints = [0x017B]
+image =  "Zdotaccent.png"
+
+['zdotaccent']
+codepoints = [0x017C]
+image =  "zdotaccent.png"
+
+['Zcaron']
+codepoints = [0x017D]
+image =  "Zcaron.png"
+
+['zcaron']
+codepoints = [0x017E]
+image =  "zcaron.png"
+
+['Scommaaccent']
+codepoints = [0x0218]
+image =  "Scommaaccent.png"
+
+['scommaaccent']
+codepoints = [0x0219]
+image =  "scommaaccent.png"
+
+['Tcommaaccent']
+codepoints = [0x021A]
+image =  "Tcommaaccent.png"
+
+['tcommaaccent']
+codepoints = [0x021B]
+image =  "tcommaaccent.png"
+
+['jdotless']
+codepoints = [0x0237]
+image =  "jdotless.png"
+
+['circumflex']
+codepoints = [0x02C6]
+image =  "circumflex.png"
+
+['caron']
+codepoints = [0x02C7]
+image =  "caron.png"
+
+['breve']
+codepoints = [0x02D8]
+image =  "breve.png"
+
+['dotaccent']
+codepoints = [0x02D9]
+image =  "dotaccent.png"
+
+['ring']
+codepoints = [0x02DA]
+image =  "ring.png"
+
+['ogonek']
+codepoints = [0x02DB]
+image =  "ogonek.png"
+
+['tilde']
+codepoints = [0x02DC]
+image =  "tilde.png"
+
+['hungarumlaut']
+codepoints = [0x02DD]
+image =  "hungarumlaut.png"
+
+['gravecomb']
+codepoints = [0x0300]
+image =  "gravecomb.png"
+
+['acutecomb']
+codepoints = [0x0301]
+image =  "acutecomb.png"
+
+['circumflexcomb']
+codepoints = [0x0302]
+image =  "circumflexcomb.png"
+
+['tildecomb']
+codepoints = [0x0303]
+image =  "tildecomb.png"
+
+['macroncomb']
+codepoints = [0x0304]
+image =  "macroncomb.png"
+
+['brevecomb']
+codepoints = [0x0306]
+image =  "brevecomb.png"
+
+['dotaccentcomb']
+codepoints = [0x0307]
+image =  "dotaccentcomb.png"
+
+['dieresiscomb']
+codepoints = [0x0308]
+image =  "dieresiscomb.png"
+
+['ringcomb']
+codepoints = [0x030A]
+image =  "ringcomb.png"
+
+['hungarumlautcomb']
+codepoints = [0x030B]
+image =  "hungarumlautcomb.png"
+
+['caroncomb']
+codepoints = [0x030C]
+image =  "caroncomb.png"
+
+['commaaccentcomb']
+codepoints = [0x0326]
+image =  "commaaccentcomb.png"
+
+['cedillacomb']
+codepoints = [0x0327]
+image =  "cedillacomb.png"
+
+['ogonekcomb']
+codepoints = [0x0328]
+image =  "ogonekcomb.png"
+
+['Wgrave']
+codepoints = [0x1E80]
+image =  "Wgrave.png"
+
+['wgrave']
+codepoints = [0x1E81]
+image =  "wgrave.png"
+
+['Wacute']
+codepoints = [0x1E82]
+image =  "Wacute.png"
+
+['wacute']
+codepoints = [0x1E83]
+image =  "wacute.png"
+
+['Wdieresis']
+codepoints = [0x1E84]
+image =  "Wdieresis.png"
+
+['wdieresis']
+codepoints = [0x1E85]
+image =  "wdieresis.png"
+
+['Germandbls']
+codepoints = [0x1E9E]
+image =  "Germandbls.png"
+
+['Ygrave']
+codepoints = [0x1EF2]
+image =  "Ygrave.png"
+
+['ygrave']
+codepoints = [0x1EF3]
+image =  "ygrave.png"
+
+['endash']
+codepoints = [0x2013]
+image =  "endash.png"
+
+['emdash']
+codepoints = [0x2014]
+image =  "emdash.png"
+
+['quoteleft']
+codepoints = [0x2018]
+image =  "quoteleft.png"
+
+['quoteright']
+codepoints = [0x2019]
+image =  "quoteright.png"
+
+['quotesinglbase']
+codepoints = [0x201A]
+image =  "quotesinglbase.png"
+
+['quotedblleft']
+codepoints = [0x201C]
+image =  "quotedblleft.png"
+
+['quotedblright']
+codepoints = [0x201D]
+image =  "quotedblright.png"
+
+['quotedblbase']
+codepoints = [0x201E]
+image =  "quotedblbase.png"
+
+['bullet']
+codepoints = [0x2022]
+image =  "bullet.png"
+
+['ellipsis']
+codepoints = [0x2026]
+image =  "ellipsis.png"
+
+['guilsinglleft']
+codepoints = [0x2039]
+image =  "guilsinglleft.png"
+
+['guilsinglright']
+codepoints = [0x203A]
+image =  "guilsinglright.png"
+
+['euro']
+codepoints = [0x20AC]
+image =  "euro.png"
+
+['trademark']
+codepoints = [0x2122]
+image =  "trademark.png"
+
+['minus']
+codepoints = [0x2212]
+image =  "minus.png"
+
+['neq']
+codepoints = [0x2260]
+image =  "neq.png"
+
+['geq']
+codepoints = [0x2265]
+image =  "geq.png"
+
+['leq']
+codepoints = [0x2264]
+image =  "leq.png"
+
+['plusminus']
+codepoints = [0xB1]
+image =  "plusminus.png"
+
+['req']
+codepoints = [0x2248]
+image =  "req.png"
+
+['not']
+codepoints = [0xAC]
+image =  "not.png"
+
+['inf']
+codepoints = [0x221E]
+image =  "inf.png"
+
+['sup2']
+codepoints = [0xB2]
+image =  "sup2.png"
+
+['sup3']
+codepoints = [0xB3]
+image =  "sup3.png"
+
+['prime']
+codepoints = [0x2032]
+image =  "prime.png"
+
+['dprime']
+codepoints = [0x2033]
+image =  "dprime.png"
+
+['Ldot']
+codepoints = [0x013F]
+image =  "Ldot.png"
+
+['ldot']
+codepoints = [0x0140]
+image =  "ldot.png"
+
+['Eng']
+codepoints = [0x014A]
+image =  "Eng.png"
+
+['eng']
+codepoints = [0x014B]
+image =  "eng.png"
+
+['Tstroke']
+codepoints = [0x0166]
+image =  "Tstroke.png"
+
+['tstroke']
+codepoints = [0x0167]
+image =  "tstroke.png"
+
+['Gstroke']
+codepoints = [0x01E4]
+image =  "Gstroke.png"
+
+['gstroke']
+codepoints = [0x01E5]
+image =  "gstroke.png"
+
+['Ezhcaron']
+codepoints = [0x01EE]
+image =  "Ezhcaron.png"
+
+['ezhcaron']
+codepoints = [0x01EF]
+image =  "ezhcaron.png"
+
+['ezh']
+codepoints = [0x0292]
+image =  "ezh.png"
+
+['longs']
+codepoints = [0x017F]
+image =  "longs.png"
+
+['IJ']
+codepoints = [0x0132]
+image =  "IJ.png"
+
+['ij']
+codepoints = [0x0133]
+image =  "ij.png"
+
+['Ubreve']
+codepoints = [0x016C]
+image =  "Ubreve.png"
+
+['ubreve']
+codepoints = [0x016D]
+image =  "ubreve.png"
+

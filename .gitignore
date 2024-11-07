@@ -15,6 +15,7 @@ out/*
 !out/proof
 out/proof/*
 !out/proof/diffenator2-report.html
+build-*
 
 # OS generated files #
 ######################
