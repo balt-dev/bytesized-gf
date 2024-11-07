@@ -20,7 +20,7 @@ Bytesized is created dynamically from multiple images found in `scripts/glyphs`.
 To set up for building and testing, run `make setup`.
 
 In order to build the font, run `make generate build` at the root of the project. 
-This will create the UFO, and then from that the TTF, and put it in `fonts/Bytesized-Regular.ttf`.
+This will create the UFO, and then from that the TTF, and put it in `fonts/ttf/Bytesized-Regular.ttf`.
 
 If you want to run any tests or create a proof, `make test` and `make proof` exist for those.
 
