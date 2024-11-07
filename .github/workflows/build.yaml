@@ -31,19 +31,14 @@ jobs:
       shell: bash
       run: echo "ZIP_NAME=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')-fonts" >> $GITHUB_ENV
     - name: Set up venv
-      run: |
-        python -m venv .venv
-        . .venv/bin/activate
-        python -m pip install -r requirements.txt
+      run: make setup
     - name: Build font
-      run: make build
+      run: make generate build
     - name: Check with fontbakery
       run: make test
       continue-on-error: true
     - name: make proof
-      run: |
-        . .venv/bin/activate
-        python -m diffenator2 proof -o out/proof -pt 24 fonts/Bytesized-Regular.ttf
+      run: make proof
     - name: Deploy site
       uses: peaceiris/actions-gh-pages@v4
       if: ${{ github.ref == 'refs/heads/main' }}
