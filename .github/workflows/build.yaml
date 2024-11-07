@@ -31,7 +31,11 @@ jobs:
       shell: bash
       run: echo "ZIP_NAME=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')-fonts" >> $GITHUB_ENV
     - name: Build font
-      run: make setup generate build
+      run: |
+        python3 -m venv .venv
+        . .venv/bin/activate
+        .venv/bin/python3 -m pip install -r requirements.txt
+        make generate build
     - name: Check with fontbakery
       run: make test
       continue-on-error: true
