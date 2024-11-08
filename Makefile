@@ -12,10 +12,6 @@ build:
 	rm -rf fonts
 	mkdir fonts
 	gftools builder sources/config.yaml
-	gftools fix-isfixedpitch --fonts fonts/ttf/Bytesized-Regular.ttf
-	mv fonts/ttf/Bytesized-Regular.ttf.fix fonts/ttf/Bytesized-Regular.ttf
-	gftools fix-nonhinting fonts/ttf/Bytesized-Regular.ttf fonts/ttf/Bytesized-Regular.ttf
-	rm fonts/ttf/*backup*.ttf
 	rm sources/.ninja_log
 	rm sources/build-*
 

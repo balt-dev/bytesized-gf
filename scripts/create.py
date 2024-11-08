@@ -27,6 +27,8 @@ def main():
             versionMinor = 0,
             openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
             openTypeNameLicenseURL = "https://openfontlicense.org",
+            openTypeNameDesigner = "baltdev",
+            openTypeNameDesignerURL = "https://github.com/balt-dev",
             openTypeOS2TypoAscender = 6 * SCALE,
             openTypeOS2TypoDescender = -4 * SCALE,
             openTypeHheaAscender = 6 * SCALE, 
@@ -35,9 +37,11 @@ def main():
             openTypeOS2WinAscent = 5 * SCALE,
             openTypeOS2WinDescent = 3 * SCALE,
             openTypeOS2CodePageRanges = [1, 0],
+            openTypeOS2Panose = [2, 1, 6, 9, 1, 2, 2, 8, 2, 3],
             # These are lists of set bits. It would be GREAT if that was in the documentation. :/
             openTypeOS2Type = [],
             openTypeOS2Selection = [7],
+            postscriptIsFixedPitch = True
         ),
         features = Features("""
             languagesystem latn dflt;
@@ -82,9 +86,9 @@ def main():
         except Exception as err:
             print(f"Failed to process glyph `{glyph}`: {err}")
 
-    if os.path.exists("scripts/Bytesized-Regular.ufo"):
-        os.remove("scripts/Bytesized-Regular.ufo")
-    writer = UFOWriter("scripts/Bytesized-Regular.ufo", structure = UFOFileStructure.ZIP)
+    if os.path.exists("sources/Bytesized-Regular.ufo"):
+        os.remove("sources/Bytesized-Regular.ufo")
+    writer = UFOWriter("sources/Bytesized-Regular.ufo", structure = UFOFileStructure.ZIP)
     font_obj.write(writer, True)
 
 

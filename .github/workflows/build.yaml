@@ -35,12 +35,10 @@ jobs:
         python3 -m venv .venv
         . .venv/bin/activate
         .venv/bin/python3 -m pip install -r requirements.txt
-        make generate build
+        make generate build proof
     - name: Check with fontbakery
       run: make test
       continue-on-error: true
-    - name: Create proof
-      run: make proof
     - name: Deploy site
       uses: peaceiris/actions-gh-pages@v4
       if: ${{ github.ref == 'refs/heads/main' }}
