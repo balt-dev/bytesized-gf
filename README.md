@@ -1,6 +1,7 @@
 # Bytesized
 
 ![Preview image of the Bytesized font, containing numbers, the alphabet, some punctuation, and "The quick brown fox jumps over the lazy dog."](documentation/preview.png)
+
 ![The spritesheet of the ASCII part of the Bytesized font.](documentation/spritesheet-raw.png)
 
 Bytesized is a miniscule monospace pixel font - 3x4 modulo diacritics - 
