@@ -46,8 +46,8 @@ def main():
         features = Features("""
             languagesystem latn dflt;
 
-            @CombiningTopAccents = [gravecomb acutecomb circumflexcomb tildecomb macroncomb brevecomb dotaccentcomb dieresiscomb ringcomb hungarumlautcomb caroncomb];
-            @CombiningNonTopAccents = [commaaccentcomb cedillacomb ogonekcomb];
+            @CombiningTopAccents = [gravecomb acutecomb circumflexcomb tildecomb macroncomb brevecomb dotaccentcomb dieresiscomb hungarumlautcomb];
+            @CombiningNonTopAccents = [commaaccentcomb];
 
             feature tnum {} tnum; 
             feature liga {
@@ -60,6 +60,7 @@ def main():
             """
         )
     )
+    glyph_hashes = {}
     for glyph, data in doc.items():
         print(f"Processing glyph `{glyph}`: {data}")
         try:
@@ -71,6 +72,11 @@ def main():
             assert "image" in data, "Must have an `image` field!"
             with Image.open("scripts/glyphs/" + data["image"]) as img:
                 unsigned_glyph = (np.array(img.convert("L")) > 128).astype(np.uint8)
+
+            glyph_hash = hash(unsigned_glyph.data.tobytes())
+            assert glyph_hash not in glyph_hashes, f"Glyphs {glyph_hashes[glyph_hash]} and {glyph} have the same image!"
+            glyph_hashes[glyph_hash] = glyph
+
             unsigned_glyph *= 255
             unsigned_glyph -= 128
             glyph = Glyph(name = glyph, width = GLYPH_WIDTH * SCALE, height = GLYPH_HEIGHT * SCALE, unicodes = data["codepoints"])
@@ -84,7 +90,7 @@ def main():
                 glyph.appendContour(contour)
             font_obj.addGlyph(glyph)
         except Exception as err:
-            print(f"Failed to process glyph `{glyph}`: {err}")
+            print(f"\tFailed to process glyph `{glyph}`: {err}")
 
     if os.path.exists("sources/Bytesized-Regular.ufo"):
         os.remove("sources/Bytesized-Regular.ufo")

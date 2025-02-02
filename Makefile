@@ -13,7 +13,6 @@ build:
 	mkdir fonts
 	gftools builder sources/config.yaml
 	rm sources/.ninja_log
-	rm sources/build-*
 
 test:
 	. .venv/bin/activate

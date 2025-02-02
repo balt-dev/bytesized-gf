@@ -65,11 +65,8 @@ Contributions are welcome! Feel free to open a PR with any changes you may want 
 ## v1.011
 - Change file layout of repository, no glyphs have changed
 
-# Trivia
-
-If you trim the font down to only 96 ASCII characters (0x20 through 0x7F), you can store each glyph in only 3x4 = 12 bits, 
-meaning you can store the entire font in only 144 bytes! You can see exactly that in `./spritesheet-raw.bin`.
-In said file, each glyph is stored one after another in row-major order.
+## v1.100
+- Alter a few glyphs to have better kerning between letters and unique glyphs where needed
 
 # Acknowledgements
 

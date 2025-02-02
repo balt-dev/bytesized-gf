@@ -12,7 +12,7 @@ codepoints = [0x21]
 image =  "exclam.png"
 
 ['quotedbl']
-codepoints = [0x22]
+codepoints = [0x22, 0x2033, 0x201C, 0x201D]
 image =  "quotedbl.png"
 
 ['numbersign']
@@ -56,7 +56,7 @@ codepoints = [0x2C]
 image =  "comma.png"
 
 ['hyphen']
-codepoints = [0x2D]
+codepoints = [0x2D, 0x2212, 0x2014]
 image =  "hyphen.png"
 
 ['period']
@@ -252,7 +252,7 @@ codepoints = [0x5D]
 image =  "bracketright.png"
 
 ['asciicircum']
-codepoints = [0x5E]
+codepoints = [0x5E, 0x02C6]
 image =  "asciicircum.png"
 
 ['underscore']
@@ -380,7 +380,7 @@ codepoints = [0x7D]
 image =  "braceright.png"
 
 ['asciitilde']
-codepoints = [0x7E]
+codepoints = [0x7E, 0x02DC]
 image =  "asciitilde.png"
 
 ['exclamdown']
@@ -432,7 +432,7 @@ codepoints = [0xB0]
 image =  "degree.png"
 
 ['acute']
-codepoints = [0xB4]
+codepoints = [0xB4, 0x2018]
 image =  "acute.png"
 
 ['paragraph']
@@ -444,7 +444,7 @@ codepoints = [0xB7]
 image =  "periodcentered.png"
 
 ['cedilla']
-codepoints = [0xB8]
+codepoints = [0xB8, 0x0327]
 image =  "cedilla.png"
 
 ['ordmasculine']
@@ -523,10 +523,6 @@ image =  "Icircumflex.png"
 codepoints = [0xCF]
 image =  "Idieresis.png"
 
-['Eth']
-codepoints = [0xD0]
-image =  "Eth.png"
-
 ['Ntilde']
 codepoints = [0xD1]
 image =  "Ntilde.png"
@@ -584,7 +580,7 @@ codepoints = [0xDE]
 image =  "Thorn.png"
 
 ['germandbls']
-codepoints = [0xDF]
+codepoints = [0xDF, 0x1E9E]
 image =  "germandbls.png"
 
 ['agrave']
@@ -772,7 +768,7 @@ codepoints = [0x010F]
 image =  "dcaron.png"
 
 ['Dcroat']
-codepoints = [0x0110]
+codepoints = [0xD0, 0x0110]
 image =  "Dcroat.png"
 
 ['dcroat']
@@ -971,14 +967,6 @@ image =  "Sacute.png"
 codepoints = [0x015B]
 image =  "sacute.png"
 
-['Scedilla']
-codepoints = [0x015E]
-image =  "Scedilla.png"
-
-['scedilla']
-codepoints = [0x015F]
-image =  "scedilla.png"
-
 ['Scaron']
 codepoints = [0x0160]
 image =  "Scaron.png"
@@ -1072,11 +1060,11 @@ codepoints = [0x017E]
 image =  "zcaron.png"
 
 ['Scommaaccent']
-codepoints = [0x0218]
+codepoints = [0x0218, 0x015E]
 image =  "Scommaaccent.png"
 
 ['scommaaccent']
-codepoints = [0x0219]
+codepoints = [0x0219, 0x015F]
 image =  "scommaaccent.png"
 
 ['Tcommaaccent']
@@ -1091,33 +1079,17 @@ image =  "tcommaaccent.png"
 codepoints = [0x0237]
 image =  "jdotless.png"
 
-['circumflex']
-codepoints = [0x02C6]
-image =  "circumflex.png"
-
-['caron']
-codepoints = [0x02C7]
-image =  "caron.png"
-
 ['breve']
-codepoints = [0x02D8]
+codepoints = [0x02D8, 0x02C7]
 image =  "breve.png"
 
 ['dotaccent']
-codepoints = [0x02D9]
+codepoints = [0x02D9, 0x02DA]
 image =  "dotaccent.png"
 
-['ring']
-codepoints = [0x02DA]
-image =  "ring.png"
-
 ['ogonek']
-codepoints = [0x02DB]
+codepoints = [0x02DB, 0x0328]
 image =  "ogonek.png"
-
-['tilde']
-codepoints = [0x02DC]
-image =  "tilde.png"
 
 ['hungarumlaut']
 codepoints = [0x02DD]
@@ -1144,40 +1116,24 @@ codepoints = [0x0304]
 image =  "macroncomb.png"
 
 ['brevecomb']
-codepoints = [0x0306]
+codepoints = [0x0306, 0x030C]
 image =  "brevecomb.png"
 
 ['dotaccentcomb']
-codepoints = [0x0307]
+codepoints = [0x0307, 0x030A]
 image =  "dotaccentcomb.png"
 
 ['dieresiscomb']
 codepoints = [0x0308]
 image =  "dieresiscomb.png"
 
-['ringcomb']
-codepoints = [0x030A]
-image =  "ringcomb.png"
-
 ['hungarumlautcomb']
 codepoints = [0x030B]
 image =  "hungarumlautcomb.png"
 
-['caroncomb']
-codepoints = [0x030C]
-image =  "caroncomb.png"
-
 ['commaaccentcomb']
 codepoints = [0x0326]
 image =  "commaaccentcomb.png"
-
-['cedillacomb']
-codepoints = [0x0327]
-image =  "cedillacomb.png"
-
-['ogonekcomb']
-codepoints = [0x0328]
-image =  "ogonekcomb.png"
 
 ['Wgrave']
 codepoints = [0x1E80]
@@ -1203,10 +1159,6 @@ image =  "Wdieresis.png"
 codepoints = [0x1E85]
 image =  "wdieresis.png"
 
-['Germandbls']
-codepoints = [0x1E9E]
-image =  "Germandbls.png"
-
 ['Ygrave']
 codepoints = [0x1EF2]
 image =  "Ygrave.png"
@@ -1219,14 +1171,6 @@ image =  "ygrave.png"
 codepoints = [0x2013]
 image =  "endash.png"
 
-['emdash']
-codepoints = [0x2014]
-image =  "emdash.png"
-
-['quoteleft']
-codepoints = [0x2018]
-image =  "quoteleft.png"
-
 ['quoteright']
 codepoints = [0x2019]
 image =  "quoteright.png"
@@ -1234,14 +1178,6 @@ image =  "quoteright.png"
 ['quotesinglbase']
 codepoints = [0x201A]
 image =  "quotesinglbase.png"
-
-['quotedblleft']
-codepoints = [0x201C]
-image =  "quotedblleft.png"
-
-['quotedblright']
-codepoints = [0x201D]
-image =  "quotedblright.png"
 
 ['quotedblbase']
 codepoints = [0x201E]
@@ -1270,10 +1206,6 @@ image =  "euro.png"
 ['trademark']
 codepoints = [0x2122]
 image =  "trademark.png"
-
-['minus']
-codepoints = [0x2212]
-image =  "minus.png"
 
 ['neq']
 codepoints = [0x2260]
@@ -1314,10 +1246,6 @@ image =  "sup3.png"
 ['prime']
 codepoints = [0x2032]
 image =  "prime.png"
-
-['dprime']
-codepoints = [0x2033]
-image =  "dprime.png"
 
 ['Ldot']
 codepoints = [0x013F]
