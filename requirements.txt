@@ -2,7 +2,7 @@ numpy==2.*
 pillow==11.*
 opencv-python-headless==4.*
 fonttools
-fontbakery==0.13.*
+fontbakery==1.*
 gftools==0.9.*
 git+https://github.com/googlefonts/diffenator2
 shaperglot==0.6.*
