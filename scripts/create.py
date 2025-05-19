@@ -11,7 +11,7 @@ import os
 
 GLYPH_WIDTH: int = 4
 GLYPH_HEIGHT: int = 10
-SCALE: int = 4
+SCALE: int = 2
 
 def main():
     with open("scripts/glyphs.toml", "rb") as f:
@@ -34,7 +34,7 @@ def main():
             openTypeHheaAscender = 6 * SCALE, 
             openTypeHheaDescender = -4 * SCALE,
             openTypeOS2TypoLineGap = 0,
-            openTypeOS2WinAscent = 5 * SCALE,
+            openTypeOS2WinAscent = 6 * SCALE,
             openTypeOS2WinDescent = 3 * SCALE,
             openTypeOS2CodePageRanges = [1, 0],
             openTypeOS2Panose = [2, 1, 6, 9, 1, 2, 2, 8, 2, 3],
