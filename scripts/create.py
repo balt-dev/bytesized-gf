@@ -11,7 +11,7 @@ import os
 
 GLYPH_WIDTH: int = 4
 GLYPH_HEIGHT: int = 10
-SCALE: int = 2
+SCALE: int = 4
 
 def main():
     with open("scripts/glyphs.toml", "rb") as f:
