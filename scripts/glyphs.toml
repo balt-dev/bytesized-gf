@@ -384,7 +384,7 @@ codepoints = [0x7E, 0x02DC]
 image =  "asciitilde.png"
 
 ['exclamdown']
-codepoints = [0xA1]
+codepoints = []
 image =  "exclamdown.png"
 
 ['cent']
