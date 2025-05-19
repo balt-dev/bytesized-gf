@@ -5,7 +5,6 @@ fonttools
 fontbakery[googlefonts]==1.*
 gftools==0.9.*
 git+https://github.com/googlefonts/diffenator2
-shaperglot==0.6.*
 dehinter==4.*
 
 ufoLib2
