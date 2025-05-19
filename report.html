@@ -273,20 +273,20 @@ you're checking.</p>
     <tr>
         <td>1</td>
         <td>0</td>
-        <td>2</td>
+        <td>0</td>
         <td>9</td>
         <td>111</td>
         <td>7</td>
-        <td>106</td>
+        <td>108</td>
     </tr>
     <tr>
         <td>0%</td>
         <td>0%</td>
-        <td>1%</td>
+        <td>0%</td>
         <td>4%</td>
         <td>47%</td>
         <td>3%</td>
-        <td>45%</td>
+        <td>46%</td>
     </tr>
 </table>
         
@@ -478,7 +478,7 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
             
                 <h2>Universal Profile Checks</h2>
 <span class='section__emoji'>
-    💥🔥⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️
+    💥⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️
 </span>
 
     
@@ -1407,51 +1407,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
     
 
     
-    <h3>
-    
-    Checking OS/2 usWinAscent &amp; usWinDescent.
-</h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:family/win_ascent_and_descent&gt;</div>
-
-
-
-<div style="background-color:#ee8">
-
-    
-
-</div>
-
-
-    
-        <details>
-            <summary>
-                🔥
-                Bytesized-Regular.ttf
-                
-            </summary>
-            <div>
-                <ul>
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            🔥 FAIL
-                            </span>
-
-                            <span class='details_text'>
-                            <p>OS/2.usWinAscent value should be equal or greater than 12, but got 10 instead</p>
-
-                            
-                             [code: ascent]
-                            
-                            </span>
-                        </li>
-                
-                </ul>
-            </div>
-        </details>
-    
-
-    
 
     
 
@@ -1785,15 +1740,15 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, coptic, tifinagh</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: math, old-permic, tifinagh, hebrew, canadian-aboriginal, duployan, tai-le, coptic, syriac, malayalam, todhri</li>
-<li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
-<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
-<li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
+<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, coptic, math, cherokee</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: duployan, malayalam, math, syriac, todhri, old-permic, tai-le, tifinagh, coptic, canadian-aboriginal, hebrew</li>
+<li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
+<li>U+030C COMBINING CARON: try adding one of: tai-le, cherokee</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
 <li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
@@ -1983,7 +1938,7 @@ definitions.</p>
             
                 <h2>Font File Checks</h2>
 <span class='section__emoji'>
-    🔥⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️
+    ⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️
 </span>
 
     
@@ -2004,53 +1959,6 @@ definitions.</p>
 
     
 
-    
-
-    
-    <h3>
-    
-    Check Google Fonts glyph coverage.
-</h3>
-<div class='check__idlabel'>Check ID: &lt;FontBakeryCheck:googlefonts/glyph_coverage&gt;</div>
-
-
-
-<div style="background-color:#ee8">
-
-    
-
-</div>
-
-
-    
-        <details>
-            <summary>
-                🔥
-                Bytesized-Regular.ttf
-                
-            </summary>
-            <div>
-                <ul>
-                
-                        <li class='details_item'>
-                            <span class='details_indicator'>
-                            🔥 FAIL
-                            </span>
-
-                            <span class='details_text'>
-                            <p>Missing required codepoints:</p>
-<pre><code>- 0x00A1 (INVERTED EXCLAMATION MARK)
-</code></pre>
-
-                            
-                             [code: missing-codepoints]
-                            
-                            </span>
-                        </li>
-                
-                </ul>
-            </div>
-        </details>
     
 
     
