@@ -23,7 +23,7 @@ def main():
             unitsPerEm = 8 * SCALE,
             postscriptFullName = "Bytesized Regular",
             postscriptFontName = "Bytesized-Regular",
-            versionMajor = 1,
+            versionMajor = 2,
             versionMinor = 0,
             openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
             openTypeNameLicenseURL = "https://openfontlicense.org",
