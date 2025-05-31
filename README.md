@@ -68,6 +68,11 @@ Contributions are welcome! Feel free to open a PR with any changes you may want 
 ## v1.100
 - Alter a few glyphs to have better kerning between letters and unique glyphs where needed
 
+## v2.000
+- Swap `O` and `0`, adjust `o` to match
+- Separate all diacritics from their letters visually
+- Move around two-wide characters to be consistent
+
 # Acknowledgements
 
 The code for generating a vector image from a pixel graphic uses an algorithm created by _yellowafterlife_,
