@@ -4,6 +4,8 @@
 
 ![The spritesheet of the ASCII part of the Bytesized font.](documentation/spritesheet.png)
 
+[Now on Google Fonts!](https://fonts.google.com/specimen/Bytesized)
+
 Bytesized is a miniscule monospace pixel font - 3x4 modulo diacritics - 
 made to be as legible as possible within these restrictions.
 
