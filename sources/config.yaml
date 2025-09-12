@@ -1,5 +1,5 @@
 sources:
-    - Bytesized-Regular.ufo
+    - sources/Bytesized-Regular.ufo
 familyName: "Bytesized Regular"
 autohintTTF: false
 includeSourceFixes: true
