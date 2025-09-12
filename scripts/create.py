@@ -103,6 +103,7 @@ def main():
         os.remove("sources/Bytesized-Regular.ufo")
     writer = UFOWriter("sources/Bytesized-Regular.ufo", structure = UFOFileStructure.ZIP)
     font_obj.write(writer, True)
+    writer.close()
 
 
 class Direction(IntEnum):

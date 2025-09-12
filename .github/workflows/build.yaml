@@ -36,9 +36,7 @@ jobs:
         . .venv/bin/activate
         .venv/bin/python3 -m pip install -r requirements.txt
         make generate
-        cd sources
-        ls
-        cd ..
+        sleep 3
         make build proof
     - name: Check with fontbakery
       run: make test
