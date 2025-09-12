@@ -24,7 +24,7 @@ def main():
             postscriptFullName = "Bytesized Regular",
             postscriptFontName = "Bytesized-Regular",
             versionMajor = 2,
-            versionMinor = 0,
+            versionMinor = 100,
             openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
             openTypeNameLicenseURL = "https://openfontlicense.org",
             openTypeNameDesigner = "baltdev",
@@ -74,12 +74,19 @@ def main():
                 unsigned_glyph = (np.array(img.convert("L")) > 128).astype(np.uint8)
 
             glyph_hash = hash(unsigned_glyph.data.tobytes())
-            assert glyph_hash not in glyph_hashes, f"Glyphs {glyph_hashes[glyph_hash]} and {glyph} have the same image!"
-            glyph_hashes[glyph_hash] = glyph
-
+            if glyph_hash in glyph_hashes:
+                print(f"Deduplicating glyph `{glyph}` as `{glyph_hashes[glyph_hash]['name']}`")
+                glyph_hashes[glyph_hash]["codepoints"].extend(data["codepoints"])
+            else:
+                glyph_hashes[glyph_hash] = {"codepoints": data["codepoints"], "image": unsigned_glyph, "name": glyph}
+        except Exception as err:
+            print(f"\tFailed to process glyph `{glyph}`: {err}")
+    for glyph in glyph_hashes.values():
+        unsigned_glyph, codepoints, name = glyph["image"], glyph["codepoints"], glyph["name"]
+        try:
             unsigned_glyph *= 255
             unsigned_glyph -= 128
-            glyph = Glyph(name = glyph, width = GLYPH_WIDTH * SCALE, height = GLYPH_HEIGHT * SCALE, unicodes = data["codepoints"])
+            glyph = Glyph(name = name, width = GLYPH_WIDTH * SCALE, height = GLYPH_HEIGHT * SCALE, unicodes = codepoints)
             glyph.appendGuideline(Guideline(y = 2 * SCALE))
             glyph.appendGuideline(Guideline(y = 6 * SCALE))
             raw_contours = get_contour(unsigned_glyph)
@@ -90,7 +97,7 @@ def main():
                 glyph.appendContour(contour)
             font_obj.addGlyph(glyph)
         except Exception as err:
-            print(f"\tFailed to process glyph `{glyph}`: {err}")
+            print(f"\tFailed to process glyph group `{glyph['codepoints']}`: {err}")
 
     if os.path.exists("sources/Bytesized-Regular.ufo"):
         os.remove("sources/Bytesized-Regular.ufo")

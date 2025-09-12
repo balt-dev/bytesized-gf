@@ -4,7 +4,7 @@ codepoints = [0xFFFD]
 image =  ".notdef.png"
 
 ['space']
-codepoints = [0x20, 0xA0]
+codepoints = [0x20, 0xA0, 0x2800]
 image =  "space.png"
 
 ['exclam']
@@ -1311,3 +1311,1154 @@ image =  "Ubreve.png"
 codepoints = [0x016D]
 image =  "ubreve.png"
 
+['integral']
+codepoints = [0x222B]
+image = "integral.png"
+
+['inset']
+codepoints = [0x2208, 0x220A]
+image = "inset.png"
+
+['notinset']
+codepoints = [0x2209]
+image = "notinset.png"
+
+['revinset']
+codepoints = [0x220B, 0x220D]
+image = "revinset.png"
+
+['revnotinset']
+codepoints = [0x220C]
+image = "revnotinset.png"
+
+['emptyset']
+codepoints = [0x2205]
+image = "emptysety.png"
+
+['therefore']
+codepoints = [0x2234]
+image = "therefore.png"
+
+['revtherefore']
+codepoints = [0x2235]
+image = "revtherefore.png"
+
+['sqrt']
+codepoints = [0x221A]
+image = "sqrt.png"
+
+['subset']
+codepoints = [0x2282]
+image = "subset.png"
+
+['superset']
+codepoints = [0x2283]
+image = "superset.png"
+
+['notsubset']
+codepoints = [0x2284]
+image = "notsubset.png"
+
+['notsuperset']
+codepoints = [0x2285]
+image = "notsuperset.png"
+
+['subset_eq']
+codepoints = [0x2286]
+image = "subset_eq.png"
+
+['superset_eq']
+codepoints = [0x2287]
+image = "superset_eq.png"
+
+
+['notsubset_eq']
+codepoints = [0x2288]
+image = "subset_eq.png"
+
+['notsuperset_eq']
+codepoints = [0x2289]
+image = "superset_eq.png"
+
+
+['tackleft']
+codepoints = [0x22A2]
+image = "tackleft.png"
+
+['tackright']
+codepoints = [0x22A3]
+image = "tackright.png"
+
+['tackup']
+codepoints = [0x22A4]
+image = "tackup.png"
+
+['tackdown']
+codepoints = [0x22A5]
+image = "tackdown.png"
+
+['exists']
+codepoints = [0x2203]
+image = "exists.png"
+
+['notexists']
+codepoints = [0x2204]
+image = "notexists.png"
+
+['fourdots']
+codepoints = [0x2237]
+image = "notexists.png"
+
+['intersection']
+codepoints = [0x2229]
+image = "intersection.png"
+
+['union']
+codepoints = [0x222A]
+image = "union.png"
+
+['wedge']
+codepoints = [0x2227]
+image = "wedge.png"
+
+['dwedge']
+codepoints = [0x2228]
+image = "dwedge.png"
+
+['delta']
+codepoints = [0x2206, 0x0394]
+image = "delta.png"
+
+['sdelta']
+codepoints = [0x2202, 0x03B4, 0x1E9F]
+image = "sdelta.png"
+
+['comp']
+codepoints = [0x2218]
+image = "comp.png"
+
+
+# Braille patterns
+['braille_0']
+codepoints = [0x2800]
+image = "braille_0.png"
+
+['braille_1']
+codepoints = [0x2801]
+image = "braille_1.png"
+
+['braille_2']
+codepoints = [0x2802]
+image = "braille_2.png"
+
+['braille_3']
+codepoints = [0x2803]
+image = "braille_3.png"
+
+['braille_4']
+codepoints = [0x2804]
+image = "braille_4.png"
+
+['braille_5']
+codepoints = [0x2805]
+image = "braille_5.png"
+
+['braille_6']
+codepoints = [0x2806]
+image = "braille_6.png"
+
+['braille_7']
+codepoints = [0x2807]
+image = "braille_7.png"
+
+['braille_8']
+codepoints = [0x2808]
+image = "braille_8.png"
+
+['braille_9']
+codepoints = [0x2809]
+image = "braille_9.png"
+
+['braille_10']
+codepoints = [0x280a]
+image = "braille_10.png"
+
+['braille_11']
+codepoints = [0x280b]
+image = "braille_11.png"
+
+['braille_12']
+codepoints = [0x280c]
+image = "braille_12.png"
+
+['braille_13']
+codepoints = [0x280d]
+image = "braille_13.png"
+
+['braille_14']
+codepoints = [0x280e]
+image = "braille_14.png"
+
+['braille_15']
+codepoints = [0x280f]
+image = "braille_15.png"
+
+['braille_16']
+codepoints = [0x2810]
+image = "braille_16.png"
+
+['braille_17']
+codepoints = [0x2811]
+image = "braille_17.png"
+
+['braille_18']
+codepoints = [0x2812]
+image = "braille_18.png"
+
+['braille_19']
+codepoints = [0x2813]
+image = "braille_19.png"
+
+['braille_20']
+codepoints = [0x2814]
+image = "braille_20.png"
+
+['braille_21']
+codepoints = [0x2815]
+image = "braille_21.png"
+
+['braille_22']
+codepoints = [0x2816]
+image = "braille_22.png"
+
+['braille_23']
+codepoints = [0x2817]
+image = "braille_23.png"
+
+['braille_24']
+codepoints = [0x2818]
+image = "braille_24.png"
+
+['braille_25']
+codepoints = [0x2819]
+image = "braille_25.png"
+
+['braille_26']
+codepoints = [0x281a]
+image = "braille_26.png"
+
+['braille_27']
+codepoints = [0x281b]
+image = "braille_27.png"
+
+['braille_28']
+codepoints = [0x281c]
+image = "braille_28.png"
+
+['braille_29']
+codepoints = [0x281d]
+image = "braille_29.png"
+
+['braille_30']
+codepoints = [0x281e]
+image = "braille_30.png"
+
+['braille_31']
+codepoints = [0x281f]
+image = "braille_31.png"
+
+['braille_32']
+codepoints = [0x2820]
+image = "braille_32.png"
+
+['braille_33']
+codepoints = [0x2821]
+image = "braille_33.png"
+
+['braille_34']
+codepoints = [0x2822]
+image = "braille_34.png"
+
+['braille_35']
+codepoints = [0x2823]
+image = "braille_35.png"
+
+['braille_36']
+codepoints = [0x2824]
+image = "braille_36.png"
+
+['braille_37']
+codepoints = [0x2825]
+image = "braille_37.png"
+
+['braille_38']
+codepoints = [0x2826]
+image = "braille_38.png"
+
+['braille_39']
+codepoints = [0x2827]
+image = "braille_39.png"
+
+['braille_40']
+codepoints = [0x2828]
+image = "braille_40.png"
+
+['braille_41']
+codepoints = [0x2829]
+image = "braille_41.png"
+
+['braille_42']
+codepoints = [0x282a]
+image = "braille_42.png"
+
+['braille_43']
+codepoints = [0x282b]
+image = "braille_43.png"
+
+['braille_44']
+codepoints = [0x282c]
+image = "braille_44.png"
+
+['braille_45']
+codepoints = [0x282d]
+image = "braille_45.png"
+
+['braille_46']
+codepoints = [0x282e]
+image = "braille_46.png"
+
+['braille_47']
+codepoints = [0x282f]
+image = "braille_47.png"
+
+['braille_48']
+codepoints = [0x2830]
+image = "braille_48.png"
+
+['braille_49']
+codepoints = [0x2831]
+image = "braille_49.png"
+
+['braille_50']
+codepoints = [0x2832]
+image = "braille_50.png"
+
+['braille_51']
+codepoints = [0x2833]
+image = "braille_51.png"
+
+['braille_52']
+codepoints = [0x2834]
+image = "braille_52.png"
+
+['braille_53']
+codepoints = [0x2835]
+image = "braille_53.png"
+
+['braille_54']
+codepoints = [0x2836]
+image = "braille_54.png"
+
+['braille_55']
+codepoints = [0x2837]
+image = "braille_55.png"
+
+['braille_56']
+codepoints = [0x2838]
+image = "braille_56.png"
+
+['braille_57']
+codepoints = [0x2839]
+image = "braille_57.png"
+
+['braille_58']
+codepoints = [0x283a]
+image = "braille_58.png"
+
+['braille_59']
+codepoints = [0x283b]
+image = "braille_59.png"
+
+['braille_60']
+codepoints = [0x283c]
+image = "braille_60.png"
+
+['braille_61']
+codepoints = [0x283d]
+image = "braille_61.png"
+
+['braille_62']
+codepoints = [0x283e]
+image = "braille_62.png"
+
+['braille_63']
+codepoints = [0x283f]
+image = "braille_63.png"
+
+['braille_64']
+codepoints = [0x2840]
+image = "braille_64.png"
+
+['braille_65']
+codepoints = [0x2841]
+image = "braille_65.png"
+
+['braille_66']
+codepoints = [0x2842]
+image = "braille_66.png"
+
+['braille_67']
+codepoints = [0x2843]
+image = "braille_67.png"
+
+['braille_68']
+codepoints = [0x2844]
+image = "braille_68.png"
+
+['braille_69']
+codepoints = [0x2845]
+image = "braille_69.png"
+
+['braille_70']
+codepoints = [0x2846]
+image = "braille_70.png"
+
+['braille_71']
+codepoints = [0x2847]
+image = "braille_71.png"
+
+['braille_72']
+codepoints = [0x2848]
+image = "braille_72.png"
+
+['braille_73']
+codepoints = [0x2849]
+image = "braille_73.png"
+
+['braille_74']
+codepoints = [0x284a]
+image = "braille_74.png"
+
+['braille_75']
+codepoints = [0x284b]
+image = "braille_75.png"
+
+['braille_76']
+codepoints = [0x284c]
+image = "braille_76.png"
+
+['braille_77']
+codepoints = [0x284d]
+image = "braille_77.png"
+
+['braille_78']
+codepoints = [0x284e]
+image = "braille_78.png"
+
+['braille_79']
+codepoints = [0x284f]
+image = "braille_79.png"
+
+['braille_80']
+codepoints = [0x2850]
+image = "braille_80.png"
+
+['braille_81']
+codepoints = [0x2851]
+image = "braille_81.png"
+
+['braille_82']
+codepoints = [0x2852]
+image = "braille_82.png"
+
+['braille_83']
+codepoints = [0x2853]
+image = "braille_83.png"
+
+['braille_84']
+codepoints = [0x2854]
+image = "braille_84.png"
+
+['braille_85']
+codepoints = [0x2855]
+image = "braille_85.png"
+
+['braille_86']
+codepoints = [0x2856]
+image = "braille_86.png"
+
+['braille_87']
+codepoints = [0x2857]
+image = "braille_87.png"
+
+['braille_88']
+codepoints = [0x2858]
+image = "braille_88.png"
+
+['braille_89']
+codepoints = [0x2859]
+image = "braille_89.png"
+
+['braille_90']
+codepoints = [0x285a]
+image = "braille_90.png"
+
+['braille_91']
+codepoints = [0x285b]
+image = "braille_91.png"
+
+['braille_92']
+codepoints = [0x285c]
+image = "braille_92.png"
+
+['braille_93']
+codepoints = [0x285d]
+image = "braille_93.png"
+
+['braille_94']
+codepoints = [0x285e]
+image = "braille_94.png"
+
+['braille_95']
+codepoints = [0x285f]
+image = "braille_95.png"
+
+['braille_96']
+codepoints = [0x2860]
+image = "braille_96.png"
+
+['braille_97']
+codepoints = [0x2861]
+image = "braille_97.png"
+
+['braille_98']
+codepoints = [0x2862]
+image = "braille_98.png"
+
+['braille_99']
+codepoints = [0x2863]
+image = "braille_99.png"
+
+['braille_100']
+codepoints = [0x2864]
+image = "braille_100.png"
+
+['braille_101']
+codepoints = [0x2865]
+image = "braille_101.png"
+
+['braille_102']
+codepoints = [0x2866]
+image = "braille_102.png"
+
+['braille_103']
+codepoints = [0x2867]
+image = "braille_103.png"
+
+['braille_104']
+codepoints = [0x2868]
+image = "braille_104.png"
+
+['braille_105']
+codepoints = [0x2869]
+image = "braille_105.png"
+
+['braille_106']
+codepoints = [0x286a]
+image = "braille_106.png"
+
+['braille_107']
+codepoints = [0x286b]
+image = "braille_107.png"
+
+['braille_108']
+codepoints = [0x286c]
+image = "braille_108.png"
+
+['braille_109']
+codepoints = [0x286d]
+image = "braille_109.png"
+
+['braille_110']
+codepoints = [0x286e]
+image = "braille_110.png"
+
+['braille_111']
+codepoints = [0x286f]
+image = "braille_111.png"
+
+['braille_112']
+codepoints = [0x2870]
+image = "braille_112.png"
+
+['braille_113']
+codepoints = [0x2871]
+image = "braille_113.png"
+
+['braille_114']
+codepoints = [0x2872]
+image = "braille_114.png"
+
+['braille_115']
+codepoints = [0x2873]
+image = "braille_115.png"
+
+['braille_116']
+codepoints = [0x2874]
+image = "braille_116.png"
+
+['braille_117']
+codepoints = [0x2875]
+image = "braille_117.png"
+
+['braille_118']
+codepoints = [0x2876]
+image = "braille_118.png"
+
+['braille_119']
+codepoints = [0x2877]
+image = "braille_119.png"
+
+['braille_120']
+codepoints = [0x2878]
+image = "braille_120.png"
+
+['braille_121']
+codepoints = [0x2879]
+image = "braille_121.png"
+
+['braille_122']
+codepoints = [0x287a]
+image = "braille_122.png"
+
+['braille_123']
+codepoints = [0x287b]
+image = "braille_123.png"
+
+['braille_124']
+codepoints = [0x287c]
+image = "braille_124.png"
+
+['braille_125']
+codepoints = [0x287d]
+image = "braille_125.png"
+
+['braille_126']
+codepoints = [0x287e]
+image = "braille_126.png"
+
+['braille_127']
+codepoints = [0x287f]
+image = "braille_127.png"
+
+['braille_128']
+codepoints = [0x2880]
+image = "braille_128.png"
+
+['braille_129']
+codepoints = [0x2881]
+image = "braille_129.png"
+
+['braille_130']
+codepoints = [0x2882]
+image = "braille_130.png"
+
+['braille_131']
+codepoints = [0x2883]
+image = "braille_131.png"
+
+['braille_132']
+codepoints = [0x2884]
+image = "braille_132.png"
+
+['braille_133']
+codepoints = [0x2885]
+image = "braille_133.png"
+
+['braille_134']
+codepoints = [0x2886]
+image = "braille_134.png"
+
+['braille_135']
+codepoints = [0x2887]
+image = "braille_135.png"
+
+['braille_136']
+codepoints = [0x2888]
+image = "braille_136.png"
+
+['braille_137']
+codepoints = [0x2889]
+image = "braille_137.png"
+
+['braille_138']
+codepoints = [0x288a]
+image = "braille_138.png"
+
+['braille_139']
+codepoints = [0x288b]
+image = "braille_139.png"
+
+['braille_140']
+codepoints = [0x288c]
+image = "braille_140.png"
+
+['braille_141']
+codepoints = [0x288d]
+image = "braille_141.png"
+
+['braille_142']
+codepoints = [0x288e]
+image = "braille_142.png"
+
+['braille_143']
+codepoints = [0x288f]
+image = "braille_143.png"
+
+['braille_144']
+codepoints = [0x2890]
+image = "braille_144.png"
+
+['braille_145']
+codepoints = [0x2891]
+image = "braille_145.png"
+
+['braille_146']
+codepoints = [0x2892]
+image = "braille_146.png"
+
+['braille_147']
+codepoints = [0x2893]
+image = "braille_147.png"
+
+['braille_148']
+codepoints = [0x2894]
+image = "braille_148.png"
+
+['braille_149']
+codepoints = [0x2895]
+image = "braille_149.png"
+
+['braille_150']
+codepoints = [0x2896]
+image = "braille_150.png"
+
+['braille_151']
+codepoints = [0x2897]
+image = "braille_151.png"
+
+['braille_152']
+codepoints = [0x2898]
+image = "braille_152.png"
+
+['braille_153']
+codepoints = [0x2899]
+image = "braille_153.png"
+
+['braille_154']
+codepoints = [0x289a]
+image = "braille_154.png"
+
+['braille_155']
+codepoints = [0x289b]
+image = "braille_155.png"
+
+['braille_156']
+codepoints = [0x289c]
+image = "braille_156.png"
+
+['braille_157']
+codepoints = [0x289d]
+image = "braille_157.png"
+
+['braille_158']
+codepoints = [0x289e]
+image = "braille_158.png"
+
+['braille_159']
+codepoints = [0x289f]
+image = "braille_159.png"
+
+['braille_160']
+codepoints = [0x28a0]
+image = "braille_160.png"
+
+['braille_161']
+codepoints = [0x28a1]
+image = "braille_161.png"
+
+['braille_162']
+codepoints = [0x28a2]
+image = "braille_162.png"
+
+['braille_163']
+codepoints = [0x28a3]
+image = "braille_163.png"
+
+['braille_164']
+codepoints = [0x28a4]
+image = "braille_164.png"
+
+['braille_165']
+codepoints = [0x28a5]
+image = "braille_165.png"
+
+['braille_166']
+codepoints = [0x28a6]
+image = "braille_166.png"
+
+['braille_167']
+codepoints = [0x28a7]
+image = "braille_167.png"
+
+['braille_168']
+codepoints = [0x28a8]
+image = "braille_168.png"
+
+['braille_169']
+codepoints = [0x28a9]
+image = "braille_169.png"
+
+['braille_170']
+codepoints = [0x28aa]
+image = "braille_170.png"
+
+['braille_171']
+codepoints = [0x28ab]
+image = "braille_171.png"
+
+['braille_172']
+codepoints = [0x28ac]
+image = "braille_172.png"
+
+['braille_173']
+codepoints = [0x28ad]
+image = "braille_173.png"
+
+['braille_174']
+codepoints = [0x28ae]
+image = "braille_174.png"
+
+['braille_175']
+codepoints = [0x28af]
+image = "braille_175.png"
+
+['braille_176']
+codepoints = [0x28b0]
+image = "braille_176.png"
+
+['braille_177']
+codepoints = [0x28b1]
+image = "braille_177.png"
+
+['braille_178']
+codepoints = [0x28b2]
+image = "braille_178.png"
+
+['braille_179']
+codepoints = [0x28b3]
+image = "braille_179.png"
+
+['braille_180']
+codepoints = [0x28b4]
+image = "braille_180.png"
+
+['braille_181']
+codepoints = [0x28b5]
+image = "braille_181.png"
+
+['braille_182']
+codepoints = [0x28b6]
+image = "braille_182.png"
+
+['braille_183']
+codepoints = [0x28b7]
+image = "braille_183.png"
+
+['braille_184']
+codepoints = [0x28b8]
+image = "braille_184.png"
+
+['braille_185']
+codepoints = [0x28b9]
+image = "braille_185.png"
+
+['braille_186']
+codepoints = [0x28ba]
+image = "braille_186.png"
+
+['braille_187']
+codepoints = [0x28bb]
+image = "braille_187.png"
+
+['braille_188']
+codepoints = [0x28bc]
+image = "braille_188.png"
+
+['braille_189']
+codepoints = [0x28bd]
+image = "braille_189.png"
+
+['braille_190']
+codepoints = [0x28be]
+image = "braille_190.png"
+
+['braille_191']
+codepoints = [0x28bf]
+image = "braille_191.png"
+
+['braille_192']
+codepoints = [0x28c0]
+image = "braille_192.png"
+
+['braille_193']
+codepoints = [0x28c1]
+image = "braille_193.png"
+
+['braille_194']
+codepoints = [0x28c2]
+image = "braille_194.png"
+
+['braille_195']
+codepoints = [0x28c3]
+image = "braille_195.png"
+
+['braille_196']
+codepoints = [0x28c4]
+image = "braille_196.png"
+
+['braille_197']
+codepoints = [0x28c5]
+image = "braille_197.png"
+
+['braille_198']
+codepoints = [0x28c6]
+image = "braille_198.png"
+
+['braille_199']
+codepoints = [0x28c7]
+image = "braille_199.png"
+
+['braille_200']
+codepoints = [0x28c8]
+image = "braille_200.png"
+
+['braille_201']
+codepoints = [0x28c9]
+image = "braille_201.png"
+
+['braille_202']
+codepoints = [0x28ca]
+image = "braille_202.png"
+
+['braille_203']
+codepoints = [0x28cb]
+image = "braille_203.png"
+
+['braille_204']
+codepoints = [0x28cc]
+image = "braille_204.png"
+
+['braille_205']
+codepoints = [0x28cd]
+image = "braille_205.png"
+
+['braille_206']
+codepoints = [0x28ce]
+image = "braille_206.png"
+
+['braille_207']
+codepoints = [0x28cf]
+image = "braille_207.png"
+
+['braille_208']
+codepoints = [0x28d0]
+image = "braille_208.png"
+
+['braille_209']
+codepoints = [0x28d1]
+image = "braille_209.png"
+
+['braille_210']
+codepoints = [0x28d2]
+image = "braille_210.png"
+
+['braille_211']
+codepoints = [0x28d3]
+image = "braille_211.png"
+
+['braille_212']
+codepoints = [0x28d4]
+image = "braille_212.png"
+
+['braille_213']
+codepoints = [0x28d5]
+image = "braille_213.png"
+
+['braille_214']
+codepoints = [0x28d6]
+image = "braille_214.png"
+
+['braille_215']
+codepoints = [0x28d7]
+image = "braille_215.png"
+
+['braille_216']
+codepoints = [0x28d8]
+image = "braille_216.png"
+
+['braille_217']
+codepoints = [0x28d9]
+image = "braille_217.png"
+
+['braille_218']
+codepoints = [0x28da]
+image = "braille_218.png"
+
+['braille_219']
+codepoints = [0x28db]
+image = "braille_219.png"
+
+['braille_220']
+codepoints = [0x28dc]
+image = "braille_220.png"
+
+['braille_221']
+codepoints = [0x28dd]
+image = "braille_221.png"
+
+['braille_222']
+codepoints = [0x28de]
+image = "braille_222.png"
+
+['braille_223']
+codepoints = [0x28df]
+image = "braille_223.png"
+
+['braille_224']
+codepoints = [0x28e0]
+image = "braille_224.png"
+
+['braille_225']
+codepoints = [0x28e1]
+image = "braille_225.png"
+
+['braille_226']
+codepoints = [0x28e2]
+image = "braille_226.png"
+
+['braille_227']
+codepoints = [0x28e3]
+image = "braille_227.png"
+
+['braille_228']
+codepoints = [0x28e4]
+image = "braille_228.png"
+
+['braille_229']
+codepoints = [0x28e5]
+image = "braille_229.png"
+
+['braille_230']
+codepoints = [0x28e6]
+image = "braille_230.png"
+
+['braille_231']
+codepoints = [0x28e7]
+image = "braille_231.png"
+
+['braille_232']
+codepoints = [0x28e8]
+image = "braille_232.png"
+
+['braille_233']
+codepoints = [0x28e9]
+image = "braille_233.png"
+
+['braille_234']
+codepoints = [0x28ea]
+image = "braille_234.png"
+
+['braille_235']
+codepoints = [0x28eb]
+image = "braille_235.png"
+
+['braille_236']
+codepoints = [0x28ec]
+image = "braille_236.png"
+
+['braille_237']
+codepoints = [0x28ed]
+image = "braille_237.png"
+
+['braille_238']
+codepoints = [0x28ee]
+image = "braille_238.png"
+
+['braille_239']
+codepoints = [0x28ef]
+image = "braille_239.png"
+
+['braille_240']
+codepoints = [0x28f0]
+image = "braille_240.png"
+
+['braille_241']
+codepoints = [0x28f1]
+image = "braille_241.png"
+
+['braille_242']
+codepoints = [0x28f2]
+image = "braille_242.png"
+
+['braille_243']
+codepoints = [0x28f3]
+image = "braille_243.png"
+
+['braille_244']
+codepoints = [0x28f4]
+image = "braille_244.png"
+
+['braille_245']
+codepoints = [0x28f5]
+image = "braille_245.png"
+
+['braille_246']
+codepoints = [0x28f6]
+image = "braille_246.png"
+
+['braille_247']
+codepoints = [0x28f7]
+image = "braille_247.png"
+
+['braille_248']
+codepoints = [0x28f8]
+image = "braille_248.png"
+
+['braille_249']
+codepoints = [0x28f9]
+image = "braille_249.png"
+
+['braille_250']
+codepoints = [0x28fa]
+image = "braille_250.png"
+
+['braille_251']
+codepoints = [0x28fb]
+image = "braille_251.png"
+
+['braille_252']
+codepoints = [0x28fc]
+image = "braille_252.png"
+
+['braille_253']
+codepoints = [0x28fd]
+image = "braille_253.png"
+
+['braille_254']
+codepoints = [0x28fe]
+image = "braille_254.png"
+
+['braille_255']
+codepoints = [0x28ff]
+image = "braille_255.png"
