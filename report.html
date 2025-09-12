@@ -311,7 +311,7 @@ immediately.
 <p>(but other kinds of bug reports and/or feature requests
     are also always welcome, of course!)</p>
 
-<p>FontBakery version: 1.0.0</p>
+<p>FontBakery version: 1.0.1</p>
         
             
                 <h2>OpenType Specification Checks</h2>
@@ -708,8 +708,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 - Glyph name: t	Contours detected: 2	Expected: 1
 
-- Glyph name: v	Contours detected: 3	Expected: 1
-
 - Glyph name: x	Contours detected: 5	Expected: 1
 
 - Glyph name: braceleft	Contours detected: 3	Expected: 1
@@ -719,8 +717,6 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 - Glyph name: yen	Contours detected: 3	Expected: 1 or 2
 
 - Glyph name: section	Contours detected: 1	Expected: 2
-
-- Glyph name: copyright	Contours detected: 1	Expected: 3
 
 - Glyph name: ordfeminine	Contours detected: 1	Expected: 2 or 3
 
@@ -1020,21 +1016,35 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 - Glyph name: quoteright	Contours detected: 2	Expected: 1
 
-- Glyph name: ellipsis	Contours detected: 2	Expected: 3
-
 - Glyph name: guilsinglleft	Contours detected: 3	Expected: 1
 
 - Glyph name: guilsinglright	Contours detected: 3	Expected: 1
 
 - Glyph name: trademark	Contours detected: 1	Expected: 2
 
+- Glyph name: notinset	Contours detected: 1	Expected: 3
+
+- Glyph name: revnotinset	Contours detected: 1	Expected: 3
+
+- Glyph name: comp	Contours detected: 4	Expected: 2
+
 - Glyph name: inf	Contours detected: 1	Expected: 3
+
+- Glyph name: wedge	Contours detected: 3	Expected: 1
+
+- Glyph name: v	Contours detected: 3	Expected: 1
+
+- Glyph name: integral	Contours detected: 3	Expected: 1
 
 - Glyph name: req	Contours detected: 4	Expected: 2
 
 - Glyph name: leq	Contours detected: 4	Expected: 2
 
 - Glyph name: geq	Contours detected: 4	Expected: 2
+
+- Glyph name: notsubset	Contours detected: 1	Expected: 2
+
+- Glyph name: notsuperset	Contours detected: 1	Expected: 2
 
 - Glyph name: AE	Contours detected: 1	Expected: 2
 
@@ -1262,6 +1272,8 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 
 - Glyph name: ij	Contours detected: 5	Expected: 3 or 4
 
+- Glyph name: integral	Contours detected: 3	Expected: 1
+
 - Glyph name: k	Contours detected: 3	Expected: 1 or 2
 
 - Glyph name: l	Contours detected: 2	Expected: 1
@@ -1285,6 +1297,8 @@ Please read <a href="https://github.com/fonttools/fonttools/issues/3014">https:/
 - Glyph name: nacute	Contours detected: 4	Expected: 2
 
 - Glyph name: ncaron	Contours detected: 5	Expected: 2
+
+- Glyph name: notsubset	Contours detected: 1	Expected: 2
 
 - Glyph name: ntilde	Contours detected: 3	Expected: 2
 
@@ -1685,25 +1699,60 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
-<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, math, tifinagh</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: coptic, old-permic, math, syriac, tifinagh, tai-le, duployan, canadian-aboriginal, malayalam, todhri, hebrew</li>
+<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
+<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, tifinagh, coptic</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, math, syriac, old-permic, tai-le, todhri, duployan, tifinagh, malayalam, canadian-aboriginal, coptic</li>
 <li>U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac</li>
-<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
-<li>U+030C COMBINING CARON: try adding one of: tai-le, cherokee</li>
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
+<li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math</li>
 <li>U+0327 COMBINING CEDILLA: try adding math</li>
 <li>U+0328 COMBINING OGONEK: not included in any glyphset definition</li>
+<li>U+0394 GREEK CAPITAL LETTER DELTA: try adding one of: elbasan, math, greek</li>
+<li>U+03B4 GREEK SMALL LETTER DELTA: try adding one of: math, greek</li>
+<li>U+2202 PARTIAL DIFFERENTIAL: try adding math</li>
+<li>U+2203 THERE EXISTS: try adding math</li>
+<li>U+2204 THERE DOES NOT EXIST: try adding math</li>
+<li>U+2205 EMPTY SET: try adding math</li>
+<li>U+2206 INCREMENT: try adding math</li>
+<li>U+2208 ELEMENT OF: try adding math</li>
+<li>U+2209 NOT AN ELEMENT OF: try adding math</li>
+<li>U+220A SMALL ELEMENT OF: try adding math</li>
+<li>U+220B CONTAINS AS MEMBER: try adding math</li>
+<li>U+220C DOES NOT CONTAIN AS MEMBER: try adding math</li>
+<li>U+220D SMALL CONTAINS AS MEMBER: try adding math</li>
+<li>U+2218 RING OPERATOR: try adding one of: symbols, math</li>
+<li>U+221A SQUARE ROOT: try adding math</li>
 <li>U+221E INFINITY: try adding math</li>
+<li>U+2227 LOGICAL AND: try adding math</li>
+<li>U+2228 LOGICAL OR: try adding math</li>
+<li>U+2229 INTERSECTION: try adding math</li>
+<li>U+222A UNION: try adding math</li>
+<li>U+222B INTEGRAL: try adding math</li>
+<li>U+2234 THEREFORE: try adding math</li>
+<li>U+2235 BECAUSE: try adding math</li>
+<li>U+2237 PROPORTION: try adding math</li>
 <li>U+2248 ALMOST EQUAL TO: try adding math</li>
 <li>U+2260 NOT EQUAL TO: try adding math</li>
 <li>U+2264 LESS-THAN OR EQUAL TO: try adding math</li>
 <li>U+2265 GREATER-THAN OR EQUAL TO: try adding math</li>
+<li>U+2282 SUBSET OF: try adding math</li>
+<li>U+2283 SUPERSET OF: try adding math</li>
+<li>U+2284 NOT A SUBSET OF: try adding math</li>
+<li>U+2285 NOT A SUPERSET OF: try adding math</li>
+<li>U+2286 SUBSET OF OR EQUAL TO: try adding math</li>
+<li>U+2287 SUPERSET OF OR EQUAL TO: try adding math</li>
+<li>U+2288 NEITHER A SUBSET OF NOR EQUAL TO: try adding math</li>
+<li>U+2289 NEITHER A SUPERSET OF NOR EQUAL TO: try adding math</li>
+<li>U+22A2 RIGHT TACK: try adding math</li>
+<li>U+22A3 LEFT TACK: try adding math</li>
+<li>U+22A4 DOWN TACK: try adding math</li>
+<li>U+22A5 UP TACK: try adding math</li>
 </ul>
-<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>latin</code>, <code>latin-ext</code></p>
+<p>Or you can add the above codepoints to one of the subsets supported by the font: <code>braille</code>, <code>latin</code>, <code>latin-ext</code></p>
 
                             
                              [code: unreachable-subsetting]
