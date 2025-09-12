@@ -24,7 +24,7 @@ def main():
             postscriptFullName = "Bytesized Regular",
             postscriptFontName = "Bytesized-Regular",
             versionMajor = 2,
-            versionMinor = 100,
+            versionMinor = 101,
             openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
             openTypeNameLicenseURL = "https://openfontlicense.org",
             openTypeNameDesigner = "baltdev",
@@ -60,6 +60,7 @@ def main():
             """
         )
     )
+    nam = open("sources/Bytesized-Regular.nam", "w+")
     glyph_hashes = {}
     for glyph, data in doc.items():
         print(f"Processing glyph `{glyph}`: {data}")
@@ -69,6 +70,7 @@ def main():
                 assert type(codepoint) is int,  f"Codepoint {i+1} must be an integer!"
                 assert 0 <= codepoint < 0x110000,  f"Codepoint {i+1} must be in the range [0, 0x10FFFF]!"
                 assert not (0xD800 <= codepoint < 0xE000),  f"Codepoint {i+1} must not be in the range [0xD800, 0xD8FF]!"
+                nam.write(f"U+{codepoint:04X}\n")
             assert "image" in data, "Must have an `image` field!"
             with Image.open("scripts/glyphs/" + data["image"]) as img:
                 unsigned_glyph = (np.array(img.convert("L")) > 128).astype(np.uint8)
@@ -81,6 +83,7 @@ def main():
                 glyph_hashes[glyph_hash] = {"codepoints": data["codepoints"], "image": unsigned_glyph, "name": glyph}
         except Exception as err:
             print(f"\tFailed to process glyph `{glyph}`: {err}")
+    nam.close()
     for glyph in glyph_hashes.values():
         unsigned_glyph, codepoints, name = glyph["image"], glyph["codepoints"], glyph["name"]
         try:

@@ -11,15 +11,20 @@ build:
 	. .venv/bin/activate
 	rm -rf fonts
 	mkdir fonts
+	mkdir fonts/ttf
+	cp METADATA.pb fonts/ttf/METADATA.pb
 	gftools builder sources/config.yaml
 	rm sources/.ninja_log
 
 test:
 	. .venv/bin/activate
+	mv fonts/ttf fonts/bytesized
 	.venv/bin/python3 -m fontbakery check-googlefonts -l WARN \
 		--full-lists --succinct \
 		--html out/report.html \
-		fonts/ttf/Bytesized-Regular.ttf
+		fonts/bytesized/Bytesized-Regular.ttf
+	mv fonts/bytesized fonts/ttf
+
 
 proof:
 	. .venv/bin/activate

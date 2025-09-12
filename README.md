@@ -78,6 +78,9 @@ Contributions are welcome! Feel free to open a PR with any changes you may want 
 ## v2.100
 - Add braille symbols and some math symbols
 
+## v2.101
+- Properly defined supported subsets
+
 # Acknowledgements
 
 The code for generating a vector image from a pixel graphic uses an algorithm created by _yellowafterlife_,
