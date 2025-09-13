@@ -24,7 +24,7 @@ def main():
             postscriptFullName = "Bytesized Regular",
             postscriptFontName = "Bytesized-Regular",
             versionMajor = 2,
-            versionMinor = 101,
+            versionMinor = 201,
             openTypeNameLicense = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org",
             openTypeNameLicenseURL = "https://openfontlicense.org",
             openTypeNameDesigner = "baltdev",

@@ -81,6 +81,9 @@ Contributions are welcome! Feel free to open a PR with any changes you may want 
 ## v2.101
 - Properly defined supported subsets
 
+## v2.201
+- Adjust dotless i and comma for better readability
+
 # Acknowledgements
 
 The code for generating a vector image from a pixel graphic uses an algorithm created by _yellowafterlife_,
